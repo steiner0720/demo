@@ -199,8 +199,13 @@ jQuery(document).ready(function(){
 			center()
 		$(window).resize(function(){
 			center()
-			location.reload()
 		});
+		
+	$(window).resize(function(){
+		if( window_width > 600){
+			location.reload()
+		}
+	});
 
 		$(function(){
 			$('html, body').stop(true,false).animate({opacity: 0}, 0).delay(3000)

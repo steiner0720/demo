@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Yu Gothic', YuGothic, 'Helvetica Nueue', Arial, 微軟正黑體, sans-serif; }
+
+.section:nth-child(1) .title-welcome {
+  font-size: 6.25em;
+  font-weight: bold;
+  color: #000;
+  line-height: 140px;
+  position: absolute; }
+  .section:nth-child(1) .title-welcome .title-welcome-color {
+    width: 60px;
+    height: 60px;
+    background-color: #856e40;
+    position: absolute;
+    margin-left: 510px;
+    top: 50px; }
+  .section:nth-child(1) .title-welcome .title-welcome-first {
+    padding: 10px 40px 10px 40px;
+    border: 15px solid #000;
+    border-bottom: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../imgs/bg_welcome-2.png); }
+  .section:nth-child(1) .title-welcome .title-welcome-second {
+    color: #fff;
+    padding: 10px 40px 10px 40px;
+    white-space: nowrap;
+    border: 15px solid #fff;
+    border-top: 0px; }
+
+.section:nth-child(1) .scroll-down-text {
+  position: absolute;
+  font-size: 3.125em;
+  font-weight: bold;
+  color: #fff;
+  z-index: 3; }
+
+.section:nth-child(1) .scroll-down-brief {
+  position: absolute;
+  width: 30%;
+  height: 120px;
+  background-color: #856e40;
+  z-index: 2; }
+
+.section:nth-child(1) .arrow-down {
+  top: 40px;
+  position: absolute;
+  width: 30px;
+  z-index: 3; }
+
+.section:nth-child(2) .bg-brief {
+  background-color: #000;
+  height: 100vh; }
+
+.section {
+  background-position: center;
+  background-size: cover; }
+  .section:nth-child(1) {
+    background-image: url(../imgs/bg_welcome.png);
+    overflow: hidden; }
+  .section:nth-child(2) {
+    background-color: #fff; }
+  .section:nth-child(3) {
+    background-color: #1a1a1a; }
+  .section:nth-child(4) {
+    background-color: #1a1a1a;
+    background-image: url(../imgs/bg_index_graphic.png); }
+  .section:nth-child(5) {
+    background-color: #1a1a1a;
+    background-image: url(../imgs/bg_index_webvisual.png); }
+  .section:nth-child(6) {
+    background-color: #1a1a1a;
+    background-image: url(../imgs/bg_index_motionfilm.png); }
+
+.nav {
+  background-color: #1a1a1a;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1; }
+  .nav ul {
+    font-weight: bold;
+    width: 100%;
+    top: 25px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    display: block; }
+    .nav ul li a {
+      text-decoration: none;
+      color: #cacaca;
+      font-size: 1.5em; }
+    .nav ul li:nth-child(4) {
+      position: absolute;
+      left: 19.27%; }
+    .nav ul li:nth-child(5) {
+      font-size: 70%;
+      position: absolute;
+      top: 15px;
+      right: 26.04%; }
+    .nav ul li:nth-child(6) {
+      font-size: 70%;
+      position: absolute;
+      top: 15px;
+      right: 19.27%; }
+    .nav ul li:nth-child(1) {
+      width: 40px;
+      height: 35px;
+      top: 15px;
+      background-color: #856e40;
+      position: absolute;
+      left: 18.27%; }
+    .nav ul li:nth-child(2) {
+      width: 0px;
+      height: 7px;
+      background-color: #856e40;
+      position: absolute;
+      top: 25px;
+      right: 30.04%; }
+    .nav ul li:nth-child(3) {
+      width: 0px;
+      height: 7px;
+      background-color: #856e40;
+      position: absolute;
+      top: 25px;
+      right: 21.27%; }

@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
 		$('#fullpage').fullpage({
 			css3: true,
 			anchors: ['welcome', 'brief', 'feature', 'works-graphic', 'works-webvisual', 'works-motionfilm'],
-        	autoScrolling: true,
+        	autoScrolling: false,
         	scrollingSpeed: 1000,
        		fitToSection: true,
         	fitToSectionDelay: 1000,

@@ -17,6 +17,9 @@ jQuery(document).ready(function(){
         	onLeave: function(index, nextIndex, direction){
 
             	//after leaving section 2
+            		$('.section').eq(3).stop(true,false).animate({opacity: 0}, 1000)
+            		$('.section').eq(4).stop(true,false).animate({opacity: 0}, 1000)
+            		$('.section').eq(5).stop(true,false).animate({opacity: 0}, 1000)
             	if(index == 1 && direction =='down'){
             	    $('.bg-brief img').stop(true,false).delay(250).animate({opacity: 1}, 1000)
             	    $('.intro-year:eq(0), .intro-content:eq(0)').stop(true,false).delay(500).animate({opacity: 1}, 1000)
@@ -55,6 +58,8 @@ jQuery(document).ready(function(){
             		$('.award-name:eq(4), .award-content:eq(4)').stop(true,false).animate({opacity: 0}, 1000)
             		$('.award-name:eq(5), .award-content:eq(5)').stop(true,false).animate({opacity: 0}, 1000)
             		$('.award-line:eq(2), .award-year:eq(2), .award-name:eq(6), .award-content:eq(6)').stop(true,false).animate({opacity: 0}, 1000)
+            		$('.main-works').stop(true,false).delay(500).animate({opacity: 1}, 1000)
+            		$('.sub-works').stop(true,false).delay(1000).animate({opacity: 1}, 1000)
          	   }
          	   if(index == 3 && direction =='up'){
          	    	$('.bg-brief img').stop(true,false).delay(250).animate({opacity: 1}, 1000)
@@ -68,11 +73,42 @@ jQuery(document).ready(function(){
             		$('.award-name:eq(4), .award-content:eq(4)').stop(true,false).delay(2250).animate({opacity: 1}, 1000)
             		$('.award-name:eq(5), .award-content:eq(5)').stop(true,false).delay(2500).animate({opacity: 1}, 1000)
             		$('.award-line:eq(2), .award-year:eq(2), .award-name:eq(6), .award-content:eq(6)').stop(true,false).delay(2750).animate({opacity: 1}, 1000)
+            		$('.main-works').stop(true,false).animate({opacity: 0}, 1000)
+            		$('.sub-works').stop(true,false).animate({opacity: 0}, 1000)
+            		$('.section').eq(3).stop(true,false).animate({opacity: 0}, 1000)
         	    }
         	    else if(index == 3 && direction =='down'){
          	       $('.bg-brief img').stop(true,false).animate({opacity: 0})
+            		$('.main-works').stop(true,false).animate({opacity: 0}, 1000)
+            		$('.sub-works').stop(true,false).animate({opacity: 0}, 1000)
+            		$('.section').eq(3).stop(true,false).animate({opacity: 1}, 1000)
          	   }
 
+         	   if(index == 4 && direction =='up'){
+            		$('.main-works').stop(true,false).delay(500).animate({opacity: 1}, 1000)
+            		$('.sub-works').stop(true,false).delay(1000).animate({opacity: 1}, 1000)
+            		$('.section').eq(3).stop(true,false).animate({opacity: 0}, 1000)
+
+         	   	}
+
+        	    else if(index == 4 && direction =='down'){
+            		$('.section').eq(4).stop(true,false).animate({opacity: 1}, 1000)
+
+         	   }
+
+         	   if(index == 5 && direction =='up'){
+					$('.section').eq(3).stop(true,false).animate({opacity: 1}, 1000)
+            		$('.section').eq(4).stop(true,false).animate({opacity: 1}, 1000)
+         	   	}
+
+        	    else if(index == 5 && direction =='down'){
+            		$('.section').eq(5).stop(true,false).animate({opacity: 1}, 1000)
+
+         	   }
+         	   if(index == 6 && direction =='up'){
+            		$('.section').eq(4).stop(true,false).animate({opacity: 1}, 1000)
+            		$('.section').eq(5).stop(true,false).animate({opacity: 0}, 1000)
+         	   	}
 
         	}
 
@@ -200,18 +236,23 @@ jQuery(document).ready(function(){
 		$(window).resize(function(){
 			center()
 		});
-		
-	$(window).resize(function(){
-		if( window_width > 600){
-			location.reload()
-		}
-	});
 
 		$(function(){
 			$('html, body').stop(true,false).animate({opacity: 0}, 0).delay(3000)
 			$('html, body').stop(true,false).animate({opacity: 1}, 1000)
 		});
 	});
+
+
+
+	
+	$(window).resize(function(){
+		if( window_width > 600){
+			location.reload()
+		}
+	})
+
+
 
 
 	// hover //

@@ -143,20 +143,6 @@ jQuery(document).ready(function(){
 	var window_width = $(window).width()
 
 
-	// window width change reload //
-
-	$(function(){
-		if( $(window).width() > 1000 ){
-			$(window).resize(function(){
-				location.reload()
-			})
-		}
-	});
-
-			
-
-
-
 	// catch window width for some element //
 
 	$(function(){
@@ -249,6 +235,7 @@ jQuery(document).ready(function(){
 
 
 
+
 		}
 			center()
 		$(window).resize(function(){
@@ -259,6 +246,32 @@ jQuery(document).ready(function(){
 			$('html, body').stop(true,false).animate({opacity: 0}, 0).delay(3000)
 			$('html, body').stop(true,false).animate({opacity: 1}, 1000)
 		});
+
+		// window width change reload //
+
+		$(function(){
+			if( $(window).width() > 1000 ){
+				$(window).resize(function(){
+					location.reload()
+				})
+
+			}else if( $(window).width() < 1000 ){
+				$('.brief').css({width: 650})
+				var brief_height = $('.brief').height()
+				$('.brief').css({'margin-top': '23%' , left: window_width / 2 - 10})
+				$('.bg-brief').css({width: '100vw'})
+				var itw = $('.intro').width()
+				$('.intro').css({left: 0})
+				var sdw_feature = $('.scroll-down-feature').width()
+				var sdh_feature = $('.scroll-down-feature').height()
+				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 , left: window_width / 2 - sdw_feature / 2 })
+				var work_iconw = $('.works-icon').width()
+				$('.works-icon').css({left: window_width / 2 - work_iconw / 2 })
+			}
+
+
+		});
+
 	});
 
 

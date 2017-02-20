@@ -245,14 +245,13 @@ jQuery(document).ready(function(){
 
 
 
-	
-// 	$(window).resize(function(){
-// 		if( window_width > 600){
-// 			location.reload()
-// 		}
-// 	})
-
-
+	$(function(){
+		if( $(window).width() > 600 ){
+			$(window).resize(function(){
+				location.reload()
+			})
+		}
+	});
 
 
 	// hover //

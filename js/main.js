@@ -146,7 +146,7 @@ jQuery(document).ready(function(){
 	// window width change reload //
 
 	$(function(){
-		if( $(window).width() > 600 ){
+		if( $(window).width() > 1000 ){
 			$(window).resize(function(){
 				location.reload()
 			})

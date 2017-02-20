@@ -108,25 +108,7 @@ body {
     width: 120px;
     height: 50px; } }
 
-@keyframes logo-in {
-  0% {
-    width: 40px; }
-  20% {
-    height: 50px; }
-  100% {
-    width: 120px;
-    height: 50px; } }
-
 @-webkit-keyframes logo-out {
-  0% {
-    width: 120px;
-    height: 50px; }
-  20% {
-    height: 40px; }
-  100% {
-    width: 40px; } }
-
-@keyframes logo-out {
   0% {
     width: 120px;
     height: 50px; }
@@ -144,25 +126,7 @@ body {
     width: 120px;
     height: 20px; } }
 
-@keyframes brief-in {
-  0% {
-    width: 40px; }
-  20% {
-    height: 20px; }
-  100% {
-    width: 120px;
-    height: 20px; } }
-
 @-webkit-keyframes brief-out {
-  0% {
-    width: 120px;
-    height: 20px; }
-  20% {
-    height: 7px; }
-  100% {
-    width: 40px; } }
-
-@keyframes brief-out {
   0% {
     width: 120px;
     height: 20px; }
@@ -180,25 +144,7 @@ body {
     width: 120px;
     height: 20px; } }
 
-@keyframes works-in {
-  0% {
-    width: 40px; }
-  20% {
-    height: 20px; }
-  100% {
-    width: 120px;
-    height: 20px; } }
-
 @-webkit-keyframes works-out {
-  0% {
-    width: 120px;
-    height: 20px; }
-  20% {
-    height: 7px; }
-  100% {
-    width: 40px; } }
-
-@keyframes works-out {
   0% {
     width: 120px;
     height: 20px; }
@@ -215,23 +161,7 @@ body {
     height: 100px;
     padding-bottom: 50px; } }
 
-@keyframes menu-in {
-  0% {
-    height: 0px;
-    padding-bottom: 0px; }
-  100% {
-    height: 100px;
-    padding-bottom: 50px; } }
-
 @-webkit-keyframes menu-out {
-  0% {
-    height: 100px;
-    padding-bottom: 50px; }
-  100% {
-    height: 0px;
-    padding-bottom: 0px; } }
-
-@keyframes menu-out {
   0% {
     height: 100px;
     padding-bottom: 50px; }
@@ -246,20 +176,7 @@ body {
   100% {
     opacity: 1; } }
 
-@keyframes menu-text-in {
-  0% {
-    visibility: hidden;
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 @-webkit-keyframes menu-text-out {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes menu-text-out {
   0% {
     opacity: 1; }
   100% {
@@ -273,23 +190,7 @@ body {
     height: 100px;
     padding-bottom: 350px; } }
 
-@keyframes menu-mobile-in {
-  0% {
-    height: 0px;
-    padding-bottom: 0px; }
-  100% {
-    height: 100px;
-    padding-bottom: 350px; } }
-
 @-webkit-keyframes menu-mobile-out {
-  0% {
-    height: 100px;
-    padding-bottom: 350px; }
-  100% {
-    height: 0px;
-    padding-bottom: 0px; } }
-
-@keyframes menu-mobile-out {
   0% {
     height: 100px;
     padding-bottom: 350px; }

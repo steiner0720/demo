@@ -184,7 +184,7 @@ body {
   z-index: 4;
   position: absolute; }
 
-@media (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 980px) {
   .nav {
     height: 200px; }
     .nav ul li:nth-child(4) {

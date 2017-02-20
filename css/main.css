@@ -528,6 +528,97 @@ body {
   z-index: 4;
   position: absolute; }
 
+@media only screen and (min-width: 300px) and (max-width: 980px) {
+  .section:nth-child(2) .bg-brief {
+    background-color: #000;
+    height: 50vh; }
+    .section:nth-child(2) .bg-brief .brief {
+      opacity: 0;
+      position: absolute;
+      z-index: 5; }
+  .section:nth-child(2) .intro {
+    background-color: #1a1a1a;
+    height: 100vh;
+    width: 50%;
+    margin-top: 23%;
+    padding: 40px;
+    position: absolute;
+    z-index: 6; }
+    .section:nth-child(2) .intro h3 {
+      font-size: 3em;
+      padding-top: 7%; }
+    .section:nth-child(2) .intro .intro-name {
+      font-size: 32px;
+      padding-top: 7%;
+      padding-bottom: 7%; }
+    .section:nth-child(2) .intro .intro-year {
+      font-size: 4em;
+      color: #4d4d4d;
+      border-left: 4px solid #856e40;
+      width: 45%;
+      margin-left: 25%;
+      opacity: 0; }
+    .section:nth-child(2) .intro .intro-content {
+      font-size: 2em;
+      color: #cacaca;
+      font-weight: normal;
+      padding: 7%;
+      opacity: 0;
+      line-height: 1.25em; }
+  .section:nth-child(2) .award {
+    height: 80vh;
+    width: 30%;
+    margin-top: 860px;
+    padding-top: 40px;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    font-size: 1em; }
+    .section:nth-child(2) .award h3 {
+      font-size: 1.5em;
+      color: #333333;
+      font-weight: bold;
+      padding-top: 7%; }
+    .section:nth-child(2) .award .award-line {
+      margin-top: 7%;
+      height: 2px;
+      weight: 1000px;
+      background-color: #856e40;
+      overflow: hidden;
+      opacity: 0; }
+    .section:nth-child(2) .award .award-year {
+      font-weight: bold;
+      margin-top: 7%;
+      float: left;
+      opacity: 0; }
+    .section:nth-child(2) .award .award-name {
+      font-weight: bold;
+      margin-top: 7%;
+      margin-left: 15%;
+      width: 70%;
+      opacity: 0; }
+    .section:nth-child(2) .award .award-content {
+      font-weight: normal;
+      line-height: 1.25em;
+      opacity: 0; }
+  .section:nth-child(2) .scroll-down-text-2 {
+    font-size: 3.125em;
+    font-weight: bold;
+    color: #fff;
+    z-index: 7;
+    position: absolute; }
+  .section:nth-child(2) .scroll-down-feature {
+    width: 100%;
+    height: 120px;
+    background-color: #856e40;
+    z-index: 7;
+    position: absolute; }
+  .section:nth-child(2) .arrow-down-2 {
+    width: 30px;
+    z-index: 8;
+    position: absolute; } }
+
 .section:nth-child(3) .works-icon {
   font-weight: bold;
   color: #fff;
@@ -602,3 +693,77 @@ body {
     position: relative;
     padding-right: 40vh;
     padding-left: 10vh; }
+
+@media only screen and (min-width: 300px) and (max-width: 980px) {
+  .section:nth-child(3) .works-icon {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    padding-top: 30vh;
+    z-index: 3;
+    line-height: 40px; }
+    .section:nth-child(3) .works-icon img {
+      width: 150px; }
+    .section:nth-child(3) .works-icon .works-icon-left {
+      float: left;
+      padding-top: 40px;
+      text-align: center; }
+      .section:nth-child(3) .works-icon .works-icon-left div {
+        padding-bottom: 16vh; }
+    .section:nth-child(3) .works-icon .works-icon-center {
+      float: left;
+      padding-top: 30px;
+      text-align: center;
+      margin-left: 100px;
+      margin-right: 100px; }
+      .section:nth-child(3) .works-icon .works-icon-center .works-icon-center-top {
+        padding-bottom: 14vh;
+        padding-left: 70px;
+        width: 250px; }
+      .section:nth-child(3) .works-icon .works-icon-center .works-icon-center-bottom .works-icon-center-bottom-left {
+        float: left;
+        width: 140px;
+        padding-right: 50px;
+        padding-top: 80px; }
+      .section:nth-child(3) .works-icon .works-icon-center .works-icon-center-bottom .works-icon-center-bottom-right {
+        float: right;
+        padding-left: 50px; }
+    .section:nth-child(3) .works-icon .works-icon-right {
+      float: left;
+      text-align: center; }
+      .section:nth-child(3) .works-icon .works-icon-right div {
+        padding-bottom: 280px; }
+  .section:nth-child(3) .main-works {
+    font-size: 9em;
+    font-weight: bold;
+    color: #242424;
+    padding-top: 780px;
+    position: relative;
+    width: 80vh;
+    opacity: 0; }
+    .section:nth-child(3) .main-works div {
+      background-color: #333333;
+      width: 80vh;
+      height: 130px;
+      left: 0px;
+      float: left;
+      position: absolute;
+      padding-left: 15px;
+      padding-right: 200px; }
+  .section:nth-child(3) .sub-works {
+    font-size: 9em;
+    font-weight: bold;
+    color: #242424;
+    margin-top: 300px;
+    position: relative;
+    opacity: 0; }
+    .section:nth-child(3) .sub-works div {
+      background-color: #333333;
+      width: 80vh;
+      height: 130px;
+      left: 0px;
+      float: left;
+      position: relative;
+      padding-right: 40vh;
+      padding-left: 50px; } }

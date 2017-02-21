@@ -134,9 +134,14 @@ jQuery(document).ready(function(){
     	var y = -(e.pageY + this.offsetTop) / 20
     	$('.title-welcome-first').css('background-position', x + 'px ' + y + 'px')
   		})
+		$('.graphic, .webvisual, .motionfilm').mousemove(function(e){
+   		var x = -(e.pageX + this.offsetLeft) / 20
+    	var y = -(e.pageY + this.offsetTop) / 20
+    	$('.graphic, .webvisual, .motionfilm').css('background-position', x + 'px ' + y + 'px')
+  		})
+
 
 	});
-
 
 	//window resize//
 	var window_height = $(window).height()
@@ -167,7 +172,6 @@ jQuery(document).ready(function(){
 			$('.intro').css({left: window_width / 2 - itw / 2 })
 			var adw = $('.award').width()
 			$('.award').css({left: window_width / 2 - adw / 2 + adw})
-
 
 			// scroll down btn //
 			var sdt2w_brief = $('.scroll-down-text-2').width()
@@ -235,7 +239,6 @@ jQuery(document).ready(function(){
 
 
 
-
 		}
 			center()
 		$(window).resize(function(){
@@ -266,9 +269,9 @@ jQuery(document).ready(function(){
 				var sdh_feature = $('.scroll-down-feature').height()
 				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 , left: window_width / 2 - sdw_feature / 2 })
 				var work_iconw = $('.works-icon').width()
-				$('.works-icon').css({left: window_width / 2 - work_iconw / 2 })
+				$('.works-icon').css({left: 0})
 				var adw = $('.award').width()
-				$('.award').css({left: window_width / 2})
+				$('.award').css({left: window_width / 2 - 30})
 				var sdw_feature = $('.scroll-down-feature').width()
 				var sdh_feature = $('.scroll-down-feature').height()
 				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 -40, left: window_width / 2 - sdw_feature / 2 })
@@ -314,14 +317,6 @@ jQuery(document).ready(function(){
 			}
 		);
 
-
-		$('.nav-animation-works').hover(
-			function() {
-  				$('.nav-works').stop(true,false).show(200)
-			}, function(){
-  				$('.nav-works').stop(true,false).hide(200)
-			}
-		);
 
 	});
 

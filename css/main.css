@@ -385,7 +385,8 @@ body {
         padding: 140px 100px 0px 50px;
         background-color: #333333;
         line-height: 10em;
-        text-align: right; }
+        text-align: right;
+        display: none; }
         .nav ul li .menu-works .menu-works-g {
           opacity: 1;
           -webkit-animation: menu-xx-out 1s forwards;

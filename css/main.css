@@ -944,3 +944,7 @@ body {
 .container .motionfilm {
   background-color: #1a1a1a;
   background-image: url(../imgs/svg/bg_works_motionfilm.svg); }
+
+@media only screen and (min-width: 300px) and (max-width: 980px) {
+  .container .graphic .works-wrap, .container .motionfilm .works-wrap, .container .webvisual .works-wrap {
+    padding-top: 50%; } }

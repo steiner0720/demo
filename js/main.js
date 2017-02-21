@@ -272,6 +272,13 @@ jQuery(document).ready(function(){
 				var sdw_feature = $('.scroll-down-feature').width()
 				var sdh_feature = $('.scroll-down-feature').height()
 				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 -40, left: window_width / 2 - sdw_feature / 2 })
+				// toggle //
+				$(function(){
+					$('.menu-works').hide()
+					$('.nav-works').click(function(){
+						$('.menu-works').slideToggle('slow')
+					})
+				})
 
 
 			}
@@ -283,14 +290,7 @@ jQuery(document).ready(function(){
 
 
 
-	// toggle //
-	$(function(){
-		$('.nav-works').click(function(){
-			$('.menu-works').slideToggle('slow')
-		})
 
-
-	})
 
 
 

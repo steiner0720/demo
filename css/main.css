@@ -119,27 +119,32 @@ body {
 
 @-webkit-keyframes brief-in {
   0% {
-    width: 40px; }
-  20% {
+    width: 40px;
     height: 20px; }
+  20% {
+    height: 20px;
+    height: 7px; }
   100% {
-    width: 120px;
+    width: 80px;
     height: 20px; } }
 
 @-webkit-keyframes brief-out {
   0% {
-    width: 120px;
+    width: 80px;
     height: 20px; }
   20% {
     height: 7px; }
   100% {
-    width: 40px; } }
+    width: 40px;
+    height: 20px; } }
 
 @-webkit-keyframes works-in {
   0% {
-    width: 40px; }
-  20% {
+    width: 80px;
     height: 20px; }
+  20% {
+    height: 20px;
+    height: 7px; }
   100% {
     width: 120px;
     height: 20px; } }
@@ -147,11 +152,12 @@ body {
 @-webkit-keyframes works-out {
   0% {
     width: 120px;
-    height: 20px; }
+    height: 30px; }
   20% {
     height: 7px; }
   100% {
-    width: 40px; } }
+    width: 80px;
+    height: 20px; } }
 
 @-webkit-keyframes menu-in {
   0% {
@@ -236,8 +242,8 @@ body {
       position: relative; }
       .nav ul li:nth-child(2) .nav-brief {
         padding-left: 10px;
-        width: 40px;
-        height: 7px;
+        width: 80px;
+        height: 20px;
         background-color: #856e40;
         position: absolute;
         -webkit-animation: brief-out 1s forwards;
@@ -256,28 +262,31 @@ body {
       z-index: 5; }
       .nav ul li:nth-child(3) .nav-works {
         position: absolute;
-        width: 40px;
-        height: 7px;
+        width: 80px;
+        height: 15px;
         margin-left: 35px;
         padding-left: 15px;
         background-color: #856e40;
         z-index: 2;
         -webkit-animation: works-out 1s forwards;
-        animation: works-out 1s forwards; }
+        animation: works-out 1s forwards;
+        overflow: hidden; }
     .nav ul li:nth-child(3):hover .nav-works {
       -webkit-animation: works-in .5s forwards;
       animation: works-in .5s forwards; }
     .nav ul li:nth-child(3):hover .menu-works {
-      display: block;
       -webkit-animation: menu-in 1s forwards;
       animation: menu-in 1s forwards; }
     .nav ul li:nth-child(3):hover .menu-works-g {
+      display: block;
       -webkit-animation: menu-text-in 1s forwards;
       animation: menu-text-in 1s forwards; }
     .nav ul li:nth-child(3):hover .menu-works-w {
+      display: block;
       -webkit-animation: menu-text-in 1.5s forwards;
       animation: menu-text-in 1.5s forwards; }
     .nav ul li:nth-child(3):hover .menu-works-m {
+      display: block;
       -webkit-animation: menu-text-in 2s forwards;
       animation: menu-text-in 2s forwards; }
     .nav ul li .menu-works {
@@ -290,17 +299,19 @@ body {
       position: absolute;
       z-index: 1;
       -webkit-animation: menu-out 1s forwards;
-      animation: menu-out 1s forwards;
-      display: none; }
+      animation: menu-out 1s forwards; }
       .nav ul li .menu-works .menu-works-g {
+        display: none;
         opacity: 0;
         -webkit-animation: menu-text-out 1s forwards;
         animation: menu-text-out 1s forwards; }
       .nav ul li .menu-works .menu-works-w {
+        display: none;
         opacity: 0;
         -webkit-animation: menu-text-out 1s forwards;
         animation: menu-text-out 1s forwards; }
       .nav ul li .menu-works .menu-works-m {
+        display: none;
         opacity: 0;
         -webkit-animation: menu-text-out 1s forwards;
         animation: menu-text-out 1s forwards; }
@@ -350,10 +361,23 @@ body {
           top: 30px;
           height: 27px;
           margin-left: 220px;
-          padding-left: 40px; }
+          padding-left: 40px;
+          overflow: visible; }
+      .nav ul li:nth-child(3):hover .nav-works {
+        -webkit-animation: menu-xx-in-out 1s forwards;
+        animation: menu-xx-in-out 1s forwards; }
       .nav ul li:nth-child(3):hover .menu-works {
         -webkit-animation: menu-xx-in 1s forwards;
         animation: menu-xx-in 1s forwards; }
+      .nav ul li:nth-child(3):hover .menu-works-gs {
+        -webkit-animation: menu-xx-in-out 1s forwards;
+        animation: menu-xx-in-out 1s forwards; }
+      .nav ul li:nth-child(3):hover .menu-works-w {
+        -webkit-animation: menu-xx-in-out 1s forwards;
+        animation: menu-xx-in-out 1s forwards; }
+      .nav ul li:nth-child(3):hover .menu-works-m {
+        -webkit-animation: menu-xx-in-out 1s forwards;
+        animation: menu-xx-in-out 1s forwards; }
       .nav ul li .menu-works {
         width: 400px;
         height: 450px;
@@ -362,15 +386,15 @@ body {
         line-height: 10em;
         text-align: right; }
         .nav ul li .menu-works .menu-works-g {
-          opacity: 0;
+          opacity: 1;
           -webkit-animation: menu-xx-out 1s forwards;
           animation: menu-xx-out 1s forwards; }
         .nav ul li .menu-works .menu-works-w {
-          opacity: 0;
+          opacity: 1;
           -webkit-animation: menu-xx-in-out 1s forwards;
           animation: menu-xx-in-out 1s forwards; }
         .nav ul li .menu-works .menu-works-m {
-          opacity: 0;
+          opacity: 1;
           -webkit-animation: menu-xx-out 1s forwards;
           animation: menu-xx-out 1s forwards; }
       .nav ul li .menu-works a:hover {

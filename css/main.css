@@ -584,7 +584,7 @@ body {
     background-color: #1a1a1a;
     height: 100vh;
     width: 40%;
-    padding: 280px 50px 40px 50px;
+    padding: 240px 50px 40px 50px;
     margin-top: 0px;
     position: absolute;
     z-index: 6; }
@@ -612,7 +612,7 @@ body {
   .section:nth-child(2) .award {
     height: 80vh;
     width: 50%;
-    padding: 280px 900px 40px 50px;
+    padding: 240px 900px 40px 50px;
     margin-top: 0px;
     position: absolute;
     z-index: 2;

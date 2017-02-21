@@ -274,7 +274,6 @@ jQuery(document).ready(function(){
 				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 -40, left: window_width / 2 - sdw_feature / 2 })
 				// toggle //
 				$(function(){
-					$('.menu-works').hide()
 					$('.nav-works').click(function(){
 						$('.menu-works').slideToggle('slow')
 					})

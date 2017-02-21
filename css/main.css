@@ -518,7 +518,7 @@ body {
 
 .section:nth-child(2) .award {
   height: 100vh;
-  width: 35%;
+  width: 30%;
   margin-top: 100px;
   padding-left: 10px;
   position: absolute;
@@ -584,7 +584,7 @@ body {
     background-color: #1a1a1a;
     height: 100vh;
     width: 40%;
-    padding: 300px 50px 40px 50px;
+    padding: 280px 50px 40px 50px;
     margin-top: 0px;
     position: absolute;
     z-index: 6; }
@@ -612,7 +612,7 @@ body {
   .section:nth-child(2) .award {
     height: 80vh;
     width: 50%;
-    padding: 300px 900px 40px 50px;
+    padding: 280px 900px 40px 50px;
     margin-top: 0px;
     position: absolute;
     z-index: 2;
@@ -639,14 +639,15 @@ body {
     .section:nth-child(2) .award .award-name {
       font-size: 1.7em;
       font-weight: bold;
-      margin-top: 7%;
+      margin-top: 3%;
       margin-left: 20%;
       width: 65%;
       opacity: 0; }
     .section:nth-child(2) .award .award-content {
       font-weight: normal;
       line-height: 1.25em;
-      opacity: 0; }
+      opacity: 0;
+      margin-top: 5px; }
   .section:nth-child(2) .scroll-down-text-2 {
     font-size: 3.125em;
     font-weight: bold;

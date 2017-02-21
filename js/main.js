@@ -172,13 +172,13 @@ jQuery(document).ready(function(){
 			// scroll down btn //
 			var sdt2w_brief = $('.scroll-down-text-2').width()
 			var sdt2h_brief = $('.scroll-down-text-2').height()
-			$('.scroll-down-text-2').css({top: window_height * 2 - sdt2h_brief / 2 - sdt2h_brief / 2 - 90, left: window_width / 2 - sdt2w_brief / 2 })
+			$('.scroll-down-text-2').css({top: window_height * 2 - sdt2h_brief / 2 - sdt2h_brief / 2 - 40, left: window_width / 2 - sdt2w_brief / 2 })
 			var sdw_feature = $('.scroll-down-feature').width()
 			var sdh_feature = $('.scroll-down-feature').height()
 			$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 , left: window_width / 2 - sdw_feature / 2 })
 			var arw_feature = $('.arrow-down-2').width()
 			var arh_feature = $('.arrow-down-2').height()
-			$('.arrow-down-2').css({top: window_height * 2 - arh_feature / 2 - 30, left: window_width / 2 - arw_feature / 2 })
+			$('.arrow-down-2').css({top: window_height * 2 - arh_feature / 2 -20, left: window_width / 2 - arw_feature / 2 })
 
 			var sdt3w_works = $('.scroll-down-text-3:eq(0)').width()
 			var sdt3h_works = $('.scroll-down-text-3:eq(0)').height()
@@ -267,6 +267,13 @@ jQuery(document).ready(function(){
 				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 , left: window_width / 2 - sdw_feature / 2 })
 				var work_iconw = $('.works-icon').width()
 				$('.works-icon').css({left: window_width / 2 - work_iconw / 2 })
+				var adw = $('.award').width()
+				$('.award').css({left: window_width / 2})
+				var sdw_feature = $('.scroll-down-feature').width()
+				var sdh_feature = $('.scroll-down-feature').height()
+				$('.scroll-down-feature').css({top: window_height * 2- sdh_feature / 2 -40, left: window_width / 2 - sdw_feature / 2 })
+
+
 			}
 
 
@@ -276,7 +283,14 @@ jQuery(document).ready(function(){
 
 
 
+	// toggle //
+	$(function(){
+		$('.nav-works').click(function(){
+			$('.menu-works').slideToggle('slow')
+		})
 
+
+	})
 
 
 
@@ -310,9 +324,10 @@ jQuery(document).ready(function(){
 			}
 		);
 
-
-
 	});
+
+
+
 
 
 

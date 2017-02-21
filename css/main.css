@@ -328,7 +328,8 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 980px) {
   .nav {
-    height: 230px; }
+    height: 230px;
+    background-color: #333333; }
     .nav ul {
       top: 55px; }
       .nav ul li a {
@@ -351,13 +352,27 @@ body {
           margin-left: 220px;
           padding-left: 40px; }
       .nav ul li:nth-child(3):hover .menu-works {
-        -webkit-animation: menu-mobile-in 1s forwards;
-        animation: menu-mobile-in 1s forwards; }
+        -webkit-animation: menu-xx-in 1s forwards;
+        animation: menu-xx-in 1s forwards; }
       .nav ul li .menu-works {
         width: 400px;
+        height: 450px;
         padding: 140px 100px 0px 50px;
+        background-color: #333333;
         line-height: 10em;
         text-align: right; }
+        .nav ul li .menu-works .menu-works-g {
+          opacity: 0;
+          -webkit-animation: menu-xx-out 1s forwards;
+          animation: menu-xx-out 1s forwards; }
+        .nav ul li .menu-works .menu-works-w {
+          opacity: 0;
+          -webkit-animation: menu-xx-in-out 1s forwards;
+          animation: menu-xx-in-out 1s forwards; }
+        .nav ul li .menu-works .menu-works-m {
+          opacity: 0;
+          -webkit-animation: menu-xx-out 1s forwards;
+          animation: menu-xx-out 1s forwards; }
       .nav ul li .menu-works a:hover {
         color: #856e40; } }
 
@@ -457,27 +472,26 @@ body {
     font-weight: normal;
     padding-bottom: 7%; }
   .section:nth-child(2) .intro .intro-year {
-    font-size: 3em;
+    font-size: 2em;
     color: #4d4d4d;
     font-weight: normal;
     border-left: 4px solid #856e40;
-    width: 25%;
-    margin-left: 40%;
+    width: 35%;
+    margin-left: 35%;
     opacity: 0; }
   .section:nth-child(2) .intro .intro-content {
     font-size: 1em;
     color: #cacaca;
     font-weight: normal;
-    padding: 7%;
+    padding: 4%;
     opacity: 0;
     line-height: 1.25em; }
 
 .section:nth-child(2) .award {
-  height: 80vh;
-  width: 30%;
-  margin-top: 60px;
-  padding-top: 40px;
-  padding-left: 40px;
+  height: 100vh;
+  width: 35%;
+  margin-top: 100px;
+  padding-left: 10px;
   position: absolute;
   z-index: 2;
   text-align: left; }
@@ -487,22 +501,22 @@ body {
     font-weight: bold;
     padding-top: 7%; }
   .section:nth-child(2) .award .award-line {
-    margin-top: 7%;
+    margin-top: 4%;
     height: 2px;
-    weight: 1000px;
+    width: 80%;
     background-color: #856e40;
     overflow: hidden;
     opacity: 0; }
   .section:nth-child(2) .award .award-year {
     font-weight: bold;
-    margin-top: 7%;
+    margin-top: 4%;
     float: left;
     opacity: 0; }
   .section:nth-child(2) .award .award-name {
     font-weight: bold;
-    margin-top: 7%;
+    margin-top: 4%;
     margin-left: 15%;
-    width: 70%;
+    width: 75%;
     opacity: 0; }
   .section:nth-child(2) .award .award-content {
     font-weight: normal;
@@ -531,7 +545,8 @@ body {
 @media only screen and (min-width: 300px) and (max-width: 980px) {
   .section:nth-child(2) .bg-brief {
     background-color: #000;
-    height: 50vh; }
+    height: 50vh;
+    display: none; }
     .section:nth-child(2) .bg-brief .brief {
       opacity: 0;
       position: absolute;
@@ -539,14 +554,14 @@ body {
   .section:nth-child(2) .intro {
     background-color: #1a1a1a;
     height: 100vh;
-    width: 50%;
-    margin-top: 23%;
-    padding: 40px;
+    width: 40%;
+    padding: 300px 50px 40px 50px;
+    margin-top: 0px;
     position: absolute;
     z-index: 6; }
     .section:nth-child(2) .intro h3 {
       font-size: 3em;
-      padding-top: 7%; }
+      padding-top: 0%; }
     .section:nth-child(2) .intro .intro-name {
       font-size: 32px;
       padding-top: 7%;
@@ -559,7 +574,7 @@ body {
       margin-left: 25%;
       opacity: 0; }
     .section:nth-child(2) .intro .intro-content {
-      font-size: 2em;
+      font-size: 1.7em;
       color: #cacaca;
       font-weight: normal;
       padding: 7%;
@@ -567,36 +582,37 @@ body {
       line-height: 1.25em; }
   .section:nth-child(2) .award {
     height: 80vh;
-    width: 30%;
-    margin-top: 860px;
-    padding-top: 40px;
-    padding-left: 0px;
+    width: 50%;
+    padding: 300px 900px 40px 50px;
+    margin-top: 0px;
     position: absolute;
     z-index: 2;
     text-align: left;
     font-size: 1em; }
     .section:nth-child(2) .award h3 {
-      font-size: 1.5em;
+      font-size: 3em;
       color: #333333;
       font-weight: bold;
-      padding-top: 7%; }
+      padding-top: 0%; }
     .section:nth-child(2) .award .award-line {
       margin-top: 7%;
       height: 2px;
-      weight: 1000px;
+      weight: 80%;
       background-color: #856e40;
       overflow: hidden;
       opacity: 0; }
     .section:nth-child(2) .award .award-year {
+      font-size: 1.7em;
       font-weight: bold;
       margin-top: 7%;
       float: left;
       opacity: 0; }
     .section:nth-child(2) .award .award-name {
+      font-size: 1.7em;
       font-weight: bold;
       margin-top: 7%;
-      margin-left: 15%;
-      width: 70%;
+      margin-left: 20%;
+      width: 65%;
       opacity: 0; }
     .section:nth-child(2) .award .award-content {
       font-weight: normal;
@@ -606,7 +622,7 @@ body {
     font-size: 3.125em;
     font-weight: bold;
     color: #fff;
-    z-index: 7;
+    z-index: 8;
     position: absolute; }
   .section:nth-child(2) .scroll-down-feature {
     width: 100%;

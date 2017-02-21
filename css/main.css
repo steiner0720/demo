@@ -362,7 +362,8 @@ body {
           height: 27px;
           margin-left: 220px;
           padding-left: 40px;
-          overflow: visible; }
+          overflow: visible;
+          display: block; }
       .nav ul li:nth-child(3):hover .nav-works {
         -webkit-animation: menu-xx-in-out 1s forwards;
         animation: menu-xx-in-out 1s forwards; }

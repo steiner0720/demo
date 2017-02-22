@@ -46,6 +46,120 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*! Flickity v2.0.5
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: 0; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.flickity-prev-next-button:hover {
+  background: #fff; }
+
+.flickity-prev-next-button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 5px #09F; }
+
+.flickity-prev-next-button:active {
+  opacity: .6; }
+
+.flickity-prev-next-button.previous {
+  left: 10px; }
+
+.flickity-prev-next-button.next {
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px; }
+
+.flickity-prev-next-button:disabled {
+  opacity: .3;
+  cursor: auto; }
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%; }
+
+.flickity-prev-next-button .arrow {
+  fill: #333; }
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: .25;
+  cursor: pointer; }
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1; }
+
 body {
   font-family: 'Yu Gothic', YuGothic, 'Helvetica Nueue', Arial, 微軟正黑體, sans-serif; }
 
@@ -339,13 +453,13 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 980px) {
   .nav {
-    height: 230px;
+    height: 150px;
     background-color: #333333; }
     .nav ul {
-      top: 55px; }
+      top: 35px; }
       .nav ul li:nth-child(1) {
         margin-left: 10%;
-        font-size: 35px; }
+        font-size: 24px; }
         .nav ul li:nth-child(1) .nav-logo {
           padding-left: 10px;
           line-height: 1.25em; }
@@ -355,12 +469,12 @@ body {
       .nav ul li:nth-child(2) {
         display: none; }
       .nav ul li:nth-child(3) {
-        right: 50%; }
+        right: 40%; }
         .nav ul li:nth-child(3) .nav-works {
-          font-size: 50px;
-          top: 30px;
+          font-size: 32px;
+          top: 40px;
           height: 27px;
-          margin-left: 120px;
+          margin-left: 80px;
           padding-left: 40px;
           overflow: visible;
           display: block; }
@@ -380,10 +494,10 @@ body {
         -webkit-animation: menu-xx-in-out 1s forwards;
         animation: menu-xx-in-out 1s forwards; }
       .nav ul li .menu-works {
-        font-size: 28px;
-        width: 300px;
-        height: 450px;
-        padding: 140px 100px 0px 100px;
+        font-size: 23px;
+        width: 200px;
+        height: 340px;
+        padding: 120px 110px 0px 80px;
         background-color: #333333;
         line-height: 4em;
         overflow: hidden;
@@ -878,7 +992,6 @@ body {
     height: 100%;
     padding-top: 7%;
     margin-left: 7%;
-    margin-right: 7%;
     margin-bottom: 10%; }
     .container .graphic .works-wrap h3, .container .motionfilm .works-wrap h3, .container .webvisual .works-wrap h3 {
       font-size: 2em;
@@ -894,7 +1007,7 @@ body {
       animation: work-text-hover-in 2s forwards; }
     .container .graphic .works-wrap .works-box, .container .motionfilm .works-wrap .works-box, .container .webvisual .works-wrap .works-box {
       float: left;
-      margin: 3%;
+      margin: 2%;
       width: 240px;
       height: 135px;
       background-color: #333333;
@@ -922,7 +1035,7 @@ body {
             font-size: 20px;
             color: #856e40;
             font-weight: bold;
-            line-height: 28px;
+            line-height: 20px;
             white-space: normal;
             margin-top: 15px;
             text-align: center;
@@ -930,10 +1043,9 @@ body {
             -webkit-animation: work-text-hover-out 2s forwards;
             animation: work-text-hover-out 2s forwards; }
             .container .graphic .works-wrap .works-box a .works-box-hover div span, .container .motionfilm .works-wrap .works-box a .works-box-hover div span, .container .webvisual .works-wrap .works-box a .works-box-hover div span {
-              font-size: 16px;
+              font-size: 14px;
               color: #4d4d4d;
-              font-weight: normal;
-              line-height: 28px; }
+              font-weight: normal; }
         .container .graphic .works-wrap .works-box a img, .container .motionfilm .works-wrap .works-box a img, .container .webvisual .works-wrap .works-box a img {
           padding-bottom: 7%; }
 
@@ -947,4 +1059,45 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 980px) {
   .container .graphic .works-wrap, .container .motionfilm .works-wrap, .container .webvisual .works-wrap {
-    padding-top: 50%; } }
+    margin-left: 5%;
+    padding-top: 23%;
+    margin-bottom: 10%; }
+    .container .graphic .works-wrap .works-box, .container .motionfilm .works-wrap .works-box, .container .webvisual .works-wrap .works-box {
+      margin-top: 5%;
+      margin-bottom: 9%;
+      width: 240px;
+      height: 135px; }
+      .container .graphic .works-wrap .works-box span, .container .motionfilm .works-wrap .works-box span, .container .webvisual .works-wrap .works-box span {
+        font-size: 28px;
+        line-height: 32px; }
+      .container .graphic .works-wrap .works-box a, .container .motionfilm .works-wrap .works-box a, .container .webvisual .works-wrap .works-box a {
+        text-decoration: none;
+        white-space: nowrap;
+        color: #fff; }
+        .container .graphic .works-wrap .works-box a .works-box-hover, .container .motionfilm .works-wrap .works-box a .works-box-hover, .container .webvisual .works-wrap .works-box a .works-box-hover {
+          width: 10px;
+          height: 95px;
+          margin-top: 0px;
+          background-color: #856e40;
+          float: left;
+          position: absolute;
+          z-index: 50;
+          -webkit-animation: work-hover-out .5s forwards;
+          animation: work-hover-out .5s forwards; }
+          .container .graphic .works-wrap .works-box a .works-box-hover div, .container .motionfilm .works-wrap .works-box a .works-box-hover div, .container .webvisual .works-wrap .works-box a .works-box-hover div {
+            font-size: 20px;
+            color: #856e40;
+            font-weight: bold;
+            line-height: 20px;
+            white-space: normal;
+            margin-top: 15px;
+            text-align: center;
+            opacity: 0;
+            -webkit-animation: work-text-hover-out 2s forwards;
+            animation: work-text-hover-out 2s forwards; }
+            .container .graphic .works-wrap .works-box a .works-box-hover div span, .container .motionfilm .works-wrap .works-box a .works-box-hover div span, .container .webvisual .works-wrap .works-box a .works-box-hover div span {
+              font-size: 14px;
+              color: #4d4d4d;
+              font-weight: normal; }
+        .container .graphic .works-wrap .works-box a img, .container .motionfilm .works-wrap .works-box a img, .container .webvisual .works-wrap .works-box a img {
+          padding-bottom: 7%; } }

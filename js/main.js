@@ -118,6 +118,101 @@ jQuery(document).ready(function(){
 
 
 
+	// fancy box //
+
+	$(function(){
+	    $(".single_2").fancybox({
+	    	openEffect	: 'elastic',
+	    	closeEffect	: 'elastic',
+	    	width : '100%',
+	    	height : '90%',
+	    	autoSize : false,
+
+	    	helpers : {
+	    		title : {
+	    			type : 'inside'
+	    		}
+	    	}
+	    });
+
+	});
+
+
+
+
+
+
+	// call lightbox //
+
+	// $(function(){
+	// 	$('.works-box').click(function(){
+	// 		var self = $(this),
+	// 			index = self.index(),
+	// 			text = self.text()
+	// 		$('.carousel').eq(index - 1).show()
+	// 		// alert(index)
+	// 	})
+	// })
+
+
+
+	// works slider box // 
+
+	$(function(){
+
+
+	// external js: flickity.pkgd.js
+
+	// $('.carousel-container').each( function( i, container ) {
+	//   var $container = $( container );
+
+	//   var $carousel = $container.find('.carousel').flickity({
+	//     cellSelector: 'img',
+	//     imagesLoaded: true,
+	//     percentPosition: false
+	//   });
+	//   // var $caption = $container.find('.caption');
+	//   // Flickity instance
+	//   // var flkty = $carousel.data('flickity');
+
+	//   // $carousel.on( 'select.flickity', function() {
+	//   //   // set image caption using img's alt
+	//   //   $caption.text( flkty.selectedElement.alt )
+	//   // });
+
+
+
+
+
+	// });
+
+
+		// external js: flickity.pkgd.js
+
+		var carousel = document.querySelector('.carousel');
+		var flkty = new Flickity( carousel, {
+		  imagesLoaded: true,
+		  percentPosition: false,
+		});
+
+		var imgs = carousel.querySelectorAll('.carousel-cell img');
+		// get transform property
+
+
+		var docStyle = document.documentElement.style;
+		var transformProp = typeof docStyle.transform == 'string' ?
+		  'transform' : 'WebkitTransform';
+
+		flkty.on( 'scroll', function() {
+		  flkty.slides.forEach( function( slide, i ) {
+		    var img = imgs[i];
+		    var x = ( slide.target + flkty.x ) * -1/3;
+		    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+		  });
+		});
+
+	});
+
 
 
 

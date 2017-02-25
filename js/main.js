@@ -125,9 +125,10 @@ jQuery(document).ready(function(){
 	    	openEffect	: 'elastic',
 	    	closeEffect	: 'elastic',
 	    	width : '100%',
-	    	height : '90%',
+	    	height : '75%',
 	    	autoSize : false,
-
+	    	scrolling : 'no',
+	    	padding : 0,
 	    	helpers : {
 	    		title : {
 	    			type : 'inside'
@@ -136,6 +137,9 @@ jQuery(document).ready(function(){
 	    });
 
 	});
+
+
+
 
 
 
@@ -161,57 +165,63 @@ jQuery(document).ready(function(){
 	$(function(){
 
 
-	// external js: flickity.pkgd.js
+		// external js: flickity.pkgd.js
+		$('.carousel').each( function( i, carousel ) {
+			var $carousel = $( carousel );
+			var flkty = new Flickity( carousel, {
+			  imagesLoaded: true,
+			  percentPosition: false,
+			});
 
-	// $('.carousel-container').each( function( i, container ) {
-	//   var $container = $( container );
+			var imgs = carousel.querySelectorAll('.carousel-cell img');
+			// get transform property
+			var docStyle = document.documentElement.style;
+			var transformProp = typeof docStyle.transform == 'string' ?
+			  'transform' : 'WebkitTransform';
 
-	//   var $carousel = $container.find('.carousel').flickity({
-	//     cellSelector: 'img',
-	//     imagesLoaded: true,
-	//     percentPosition: false
-	//   });
-	//   // var $caption = $container.find('.caption');
-	//   // Flickity instance
-	//   // var flkty = $carousel.data('flickity');
-
-	//   // $carousel.on( 'select.flickity', function() {
-	//   //   // set image caption using img's alt
-	//   //   $caption.text( flkty.selectedElement.alt )
-	//   // });
-
-
-
-
-
-	// });
+			flkty.on( 'scroll', function() {
+			  flkty.slides.forEach( function( slide, i ) {
+			    var img = imgs[i];
+			    var x = ( slide.target + flkty.x ) * -1/3;
+			    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+			  });
+			});
+		});
 
 
 		// external js: flickity.pkgd.js
 
-		var carousel = document.querySelector('.carousel');
-		var flkty = new Flickity( carousel, {
-		  imagesLoaded: true,
-		  percentPosition: false,
-		});
-
-		var imgs = carousel.querySelectorAll('.carousel-cell img');
 		// get transform property
+		// var docStyle = document.documentElement.style;
+		// var transformProp = typeof docStyle.transform == 'string' ?
+		//   'transform' : 'WebkitTransform';
+
+		// $('.carousel').each( function( i, carousel ) {
+		//   var $carousel = $( carousel );
+		//   $carousel.flickity({
+		//     imagesLoaded: true,
+		//     percentPosition: false,
+		//   });
+
+		//   var $imgs = $carousel.find('.carousel-cell img');
+		//   // get Flickity instance
+		//   var flkty = $carousel.data('flickity');
+
+		//    $carousel.on( 'scroll.flickity', function() {
+		//     flkty.slides.forEach( function( slide, i ) {
+		//       var img = $imgs[i];
+		//       var x = ( slide.target + flkty.x ) * -1/3;
+		//       img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+		//     });
+		//   });
+		  
+		// });
 
 
-		var docStyle = document.documentElement.style;
-		var transformProp = typeof docStyle.transform == 'string' ?
-		  'transform' : 'WebkitTransform';
 
-		flkty.on( 'scroll', function() {
-		  flkty.slides.forEach( function( slide, i ) {
-		    var img = imgs[i];
-		    var x = ( slide.target + flkty.x ) * -1/3;
-		    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-		  });
-		});
 
 	});
+
 
 
 
@@ -234,6 +244,8 @@ jQuery(document).ready(function(){
     	var y = -(e.pageY + this.offsetTop) / 20
     	$('.graphic, .webvisual, .motionfilm').css('background-position', x + 'px ' + y + 'px')
   		})
+
+
 
 
 	});

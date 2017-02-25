@@ -210,7 +210,7 @@ body {
   width: 100%;
   height: 100px;
   position: fixed;
-  z-index: 1; }
+  z-index: 10; }
   .nav ul {
     font-weight: bold;
     width: 100%;
@@ -841,14 +841,14 @@ body {
     width: 240px;
     height: 95px;
     margin-top: 20px;
-    background-color: #fff; } }
+    background-color: #1a1a1a; } }
 
 @-webkit-keyframes work-hover-out {
   0% {
     width: 240px;
     height: 95px;
     margin-top: 20px;
-    background-color: #fff; }
+    background-color: #1a1a1a; }
   20% {
     height: 95px;
     margin-top: 20px; }
@@ -896,8 +896,7 @@ body {
       margin: 2%;
       width: 240px;
       height: 135px;
-      background-color: #333333;
-      z-index: 5; }
+      background-color: #333333; }
       .container .graphic .works-wrap .works-box span, .container .motionfilm .works-wrap .works-box span, .container .webvisual .works-wrap .works-box span {
         padding-top: 20%;
         font-size: 1em;
@@ -912,9 +911,7 @@ body {
           height: 95px;
           margin-top: 0px;
           background-color: #856e40;
-          float: left;
-          position: absolute;
-          z-index: 50;
+          z-index: 1;
           -webkit-animation: work-hover-out .5s forwards;
           animation: work-hover-out .5s forwards; }
           .container .graphic .works-wrap .works-box a .works-box-hover div, .container .motionfilm .works-wrap .works-box a .works-box-hover div, .container .webvisual .works-wrap .works-box a .works-box-hover div {
@@ -923,7 +920,6 @@ body {
             font-weight: bold;
             line-height: 20px;
             white-space: normal;
-            margin-top: 15px;
             text-align: center;
             opacity: 0;
             -webkit-animation: work-text-hover-out 2s forwards;
@@ -934,6 +930,9 @@ body {
               font-weight: normal; }
         .container .graphic .works-wrap .works-box a img, .container .motionfilm .works-wrap .works-box a img, .container .webvisual .works-wrap .works-box a img {
           padding-bottom: 7%; }
+
+.container .graphic .works-wrap .works-box:nth-child(2) {
+  background-image: url(../imgs/works_review/1.png); }
 
 .container .webvisual {
   background-color: #1a1a1a;
@@ -1002,7 +1001,7 @@ body {
   overflow: hidden; }
 
 .fancybox-skin {
-  background: rgba(249, 249, 249, 0); }
+  padding: 0; }
 
 .fancybox-title, .fancybox-title-inside-wrap {
   display: none; }
@@ -1031,7 +1030,7 @@ body {
           background-color: #856e40;
           float: left;
           position: absolute;
-          z-index: 50;
+          z-index: 1;
           -webkit-animation: work-hover-out .5s forwards;
           animation: work-hover-out .5s forwards; }
           .container .graphic .works-wrap .works-box a .works-box-hover div, .container .motionfilm .works-wrap .works-box a .works-box-hover div, .container .webvisual .works-wrap .works-box a .works-box-hover div {

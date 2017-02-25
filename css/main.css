@@ -47,7 +47,10 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Yu Gothic', YuGothic, 'Helvetica Nueue', Arial, 微軟正黑體, sans-serif; }
+  font-family: 'Yu Gothic', YuGothic, 'Helvetica Nueue', Arial, 微軟正黑體, sans-serif;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -webkit-perspective: 1000px; }
 
 .section .works-content {
   color: #fff; }
@@ -336,74 +339,6 @@ body {
   width: 30px;
   z-index: 4;
   position: absolute; }
-
-@media only screen and (min-width: 300px) and (max-width: 980px) {
-  .nav {
-    height: 150px;
-    background-color: #333333; }
-    .nav ul {
-      top: 35px; }
-      .nav ul li:nth-child(1) {
-        margin-left: 10%;
-        font-size: 24px; }
-        .nav ul li:nth-child(1) .nav-logo {
-          padding-left: 10px;
-          line-height: 1.25em; }
-      .nav ul li:nth-child(1):hover .nav-logo {
-        -webkit-animation: logo-in 1s forwards;
-        animation: logo-in 1s forwards; }
-      .nav ul li:nth-child(2) {
-        display: none; }
-      .nav ul li:nth-child(3) {
-        right: 40%; }
-        .nav ul li:nth-child(3) .nav-works {
-          font-size: 32px;
-          top: 40px;
-          height: 27px;
-          margin-left: 80px;
-          padding-left: 40px;
-          overflow: visible;
-          display: block; }
-      .nav ul li:nth-child(3):hover .nav-works {
-        -webkit-animation: menu-xx-in-out 1s forwards;
-        animation: menu-xx-in-out 1s forwards; }
-      .nav ul li:nth-child(3):hover .menu-works {
-        -webkit-animation: menu-xx-in 1s forwards;
-        animation: menu-xx-in 1s forwards; }
-      .nav ul li:nth-child(3):hover .menu-works-gs {
-        -webkit-animation: menu-xx-in-out 1s forwards;
-        animation: menu-xx-in-out 1s forwards; }
-      .nav ul li:nth-child(3):hover .menu-works-w {
-        -webkit-animation: menu-xx-in-out 1s forwards;
-        animation: menu-xx-in-out 1s forwards; }
-      .nav ul li:nth-child(3):hover .menu-works-m {
-        -webkit-animation: menu-xx-in-out 1s forwards;
-        animation: menu-xx-in-out 1s forwards; }
-      .nav ul li .menu-works {
-        font-size: 23px;
-        width: 200px;
-        height: 340px;
-        padding: 120px 110px 0px 80px;
-        background-color: #333333;
-        line-height: 4em;
-        overflow: hidden;
-        text-align: right;
-        display: none;
-        text-align: center; }
-        .nav ul li .menu-works .menu-works-g {
-          opacity: 1;
-          -webkit-animation: menu-xx-out 1s forwards;
-          animation: menu-xx-out 1s forwards; }
-        .nav ul li .menu-works .menu-works-w {
-          opacity: 1;
-          -webkit-animation: menu-xx-in-out 1s forwards;
-          animation: menu-xx-in-out 1s forwards; }
-        .nav ul li .menu-works .menu-works-m {
-          opacity: 1;
-          -webkit-animation: menu-xx-out 1s forwards;
-          animation: menu-xx-out 1s forwards; }
-      .nav ul li .menu-works a:hover {
-        color: #856e40; } }
 
 .section:nth-child(1) .title-welcome {
   font-size: 6.25em;
@@ -830,32 +765,24 @@ body {
 
 @-webkit-keyframes work-hover-in {
   0% {
-    width: 10px;
-    height: 135px;
-    margin-top: 0px;
+    width: 0px;
+    height: 100%;
     background-color: #856e40; }
-  20% {
-    height: 95px;
-    margin-top: 20px; }
+  20% { }
   100% {
-    width: 240px;
-    height: 95px;
-    margin-top: 20px;
+    width: 100%;
+    height: 100%;
     background-color: #1a1a1a; } }
 
 @-webkit-keyframes work-hover-out {
   0% {
-    width: 240px;
-    height: 95px;
-    margin-top: 20px;
+    width: 100%;
+    height: 100%;
     background-color: #1a1a1a; }
-  20% {
-    height: 95px;
-    margin-top: 20px; }
+  20% { }
   100% {
-    width: 10px;
-    height: 135px;
-    margin-top: 0px;
+    width: 0px;
+    height: 100%;
     background-color: #856e40; } }
 
 @-webkit-keyframes work-text-hover-in {
@@ -870,80 +797,84 @@ body {
   0 {
     opacity: 0; } }
 
-.container .graphic, .container .motionfilm, .container .webvisual {
-  background-color: #1a1a1a;
-  background-image: url(../imgs/svg/bg_works_graphic.svg); }
-  .container .graphic .works-wrap, .container .motionfilm .works-wrap, .container .webvisual .works-wrap {
-    width: 100%;
-    height: 100%;
-    padding-top: 7%;
-    margin-left: 7%;
-    margin-bottom: 10%; }
-    .container .graphic .works-wrap h3, .container .motionfilm .works-wrap h3, .container .webvisual .works-wrap h3 {
+.container .works {
+  background-color: #1a1a1a; }
+  .container .works .graphic, .container .works .motionfilm, .container .works .webvisual {
+    height: 100vh; }
+    .container .works .graphic h3, .container .works .motionfilm h3, .container .works .webvisual h3 {
+      text-align: center;
+      padding-top: 8%;
+      padding-bottom: 2%;
       font-size: 2em;
       font-weight: bold;
-      color: #cacaca;
-      margin-left: 3%;
-      margin-right: 3%; }
-    .container .graphic .works-wrap .works-box:hover .works-box-hover, .container .motionfilm .works-wrap .works-box:hover .works-box-hover, .container .webvisual .works-wrap .works-box:hover .works-box-hover {
-      -webkit-animation: work-hover-in .5s forwards;
-      animation: work-hover-in .5s forwards; }
-    .container .graphic .works-wrap .works-box:hover .works-box-hover-text, .container .motionfilm .works-wrap .works-box:hover .works-box-hover-text, .container .webvisual .works-wrap .works-box:hover .works-box-hover-text {
-      -webkit-animation: work-text-hover-in 2s forwards;
-      animation: work-text-hover-in 2s forwards; }
-    .container .graphic .works-wrap .works-box, .container .motionfilm .works-wrap .works-box, .container .webvisual .works-wrap .works-box {
-      float: left;
-      margin: 2%;
-      width: 240px;
-      height: 135px;
-      background-color: #333333; }
-      .container .graphic .works-wrap .works-box span, .container .motionfilm .works-wrap .works-box span, .container .webvisual .works-wrap .works-box span {
-        padding-top: 20%;
-        font-size: 1em;
-        font-weight: normal;
-        color: #cacaca; }
-      .container .graphic .works-wrap .works-box a, .container .motionfilm .works-wrap .works-box a, .container .webvisual .works-wrap .works-box a {
-        text-decoration: none;
-        white-space: nowrap;
-        color: #fff; }
-        .container .graphic .works-wrap .works-box a .works-box-hover, .container .motionfilm .works-wrap .works-box a .works-box-hover, .container .webvisual .works-wrap .works-box a .works-box-hover {
-          width: 10px;
-          height: 95px;
-          margin-top: 0px;
-          background-color: #856e40;
-          z-index: 1;
-          -webkit-animation: work-hover-out .5s forwards;
-          animation: work-hover-out .5s forwards; }
-          .container .graphic .works-wrap .works-box a .works-box-hover div, .container .motionfilm .works-wrap .works-box a .works-box-hover div, .container .webvisual .works-wrap .works-box a .works-box-hover div {
-            font-size: 20px;
-            color: #856e40;
-            font-weight: bold;
-            line-height: 20px;
-            white-space: normal;
-            text-align: center;
-            opacity: 0;
-            -webkit-animation: work-text-hover-out 2s forwards;
-            animation: work-text-hover-out 2s forwards; }
-            .container .graphic .works-wrap .works-box a .works-box-hover div span, .container .motionfilm .works-wrap .works-box a .works-box-hover div span, .container .webvisual .works-wrap .works-box a .works-box-hover div span {
-              font-size: 14px;
-              color: #4d4d4d;
-              font-weight: normal; }
-        .container .graphic .works-wrap .works-box a img, .container .motionfilm .works-wrap .works-box a img, .container .webvisual .works-wrap .works-box a img {
-          padding-bottom: 7%; }
-
-.container .graphic .works-wrap .works-box:nth-child(2) {
-  background-image: url(../imgs/works_review/1.png); }
-
-.container .webvisual {
-  background-color: #1a1a1a;
-  background-image: url(../imgs/svg/bg_works_webvisual.svg); }
-
-.container .motionfilm {
-  background-color: #1a1a1a;
-  background-image: url(../imgs/svg/bg_works_motionfilm.svg); }
+      color: #cacaca; }
+    .container .works .graphic .works-wrap, .container .works .motionfilm .works-wrap, .container .works .webvisual .works-wrap {
+      background-position: center;
+      background-size: cover;
+      background-image: url(../imgs/svg/bg_works_graphic.svg);
+      background-color: #1a1a1a; }
+      .container .works .graphic .works-wrap .works-box, .container .works .motionfilm .works-wrap .works-box, .container .works .webvisual .works-wrap .works-box {
+        display: inline-block;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 3%; }
+        .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover {
+          -webkit-animation: work-hover-in 1s forwards;
+          animation: work-hover-in 1s forwards; }
+        .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover-text {
+          -webkit-animation: work-text-hover-in 2s forwards;
+          animation: work-text-hover-in 2s forwards; }
+        .container .works .graphic .works-wrap .works-box .works-imgbox, .container .works .motionfilm .works-wrap .works-box .works-imgbox, .container .works .webvisual .works-wrap .works-box .works-imgbox {
+          width: 360px;
+          height: 202px;
+          margin-bottom: 20px;
+          background-size: cover; }
+          .container .works .graphic .works-wrap .works-box .works-imgbox a, .container .works .motionfilm .works-wrap .works-box .works-imgbox a, .container .works .webvisual .works-wrap .works-box .works-imgbox a {
+            text-decoration: none;
+            white-space: nowrap;
+            color: #fff; }
+            .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover {
+              width: 0px;
+              margin: 0px;
+              background-color: #856e40;
+              -webkit-animation: work-hover-out 1s forwards;
+              animation: work-hover-out 1s forwards; }
+              .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div {
+                font-size: 20px;
+                color: #856e40;
+                font-weight: bold;
+                line-height: 28px;
+                white-space: normal;
+                text-align: center;
+                opacity: 0;
+                padding-top: 30px;
+                height: 100px;
+                -webkit-animation: work-text-hover-out 2s forwards;
+                animation: work-text-hover-out 2s forwards; }
+                .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div span {
+                  font-size: 16px;
+                  color: #cacaca;
+                  font-weight: normal; }
+            .container .works .graphic .works-wrap .works-box .works-imgbox a img, .container .works .motionfilm .works-wrap .works-box .works-imgbox a img, .container .works .webvisual .works-wrap .works-box .works-imgbox a img {
+              padding-bottom: 7%; }
+        .container .works .graphic .works-wrap .works-box span, .container .works .motionfilm .works-wrap .works-box span, .container .works .webvisual .works-wrap .works-box span {
+          font-size: 1em;
+          font-weight: normal;
+          color: #cacaca; }
+  .container .works .webvisual .works-wrap {
+    background-position: center;
+    background-size: cover;
+    background-color: #1a1a1a;
+    background-image: url(../imgs/svg/bg_works_webvisual.svg); }
+  .container .works .motionfilm .works-wrap {
+    background-position: center;
+    background-size: cover;
+    background-color: #1a1a1a;
+    background-image: url(../imgs/svg/bg_works_motionfilm.svg); }
 
 /* external css: flickity.css */
-.section .carousel-container {
+.works .carousel-container {
   width: 100%;
   height: 50%;
   position: absolute;
@@ -983,7 +914,7 @@ body {
   margin-right: 20px;
   overflow: hidden; }
   .carousel-cell img {
-    height: 80vh; }
+    height: 70vh; }
 
 .flickity-prev-next-button.next {
   margin-right: 20%;
@@ -1005,51 +936,6 @@ body {
 
 .fancybox-title, .fancybox-title-inside-wrap {
   display: none; }
-
-@media only screen and (min-width: 300px) and (max-width: 980px) {
-  .container .graphic .works-wrap, .container .motionfilm .works-wrap, .container .webvisual .works-wrap {
-    margin-left: 5%;
-    padding-top: 23%;
-    margin-bottom: 10%; }
-    .container .graphic .works-wrap .works-box, .container .motionfilm .works-wrap .works-box, .container .webvisual .works-wrap .works-box {
-      margin-top: 5%;
-      margin-bottom: 9%;
-      width: 240px;
-      height: 135px; }
-      .container .graphic .works-wrap .works-box span, .container .motionfilm .works-wrap .works-box span, .container .webvisual .works-wrap .works-box span {
-        font-size: 28px;
-        line-height: 32px; }
-      .container .graphic .works-wrap .works-box a, .container .motionfilm .works-wrap .works-box a, .container .webvisual .works-wrap .works-box a {
-        text-decoration: none;
-        white-space: nowrap;
-        color: #fff; }
-        .container .graphic .works-wrap .works-box a .works-box-hover, .container .motionfilm .works-wrap .works-box a .works-box-hover, .container .webvisual .works-wrap .works-box a .works-box-hover {
-          width: 10px;
-          height: 95px;
-          margin-top: 0px;
-          background-color: #856e40;
-          float: left;
-          position: absolute;
-          z-index: 1;
-          -webkit-animation: work-hover-out .5s forwards;
-          animation: work-hover-out .5s forwards; }
-          .container .graphic .works-wrap .works-box a .works-box-hover div, .container .motionfilm .works-wrap .works-box a .works-box-hover div, .container .webvisual .works-wrap .works-box a .works-box-hover div {
-            font-size: 20px;
-            color: #856e40;
-            font-weight: bold;
-            line-height: 20px;
-            white-space: normal;
-            margin-top: 15px;
-            text-align: center;
-            opacity: 0;
-            -webkit-animation: work-text-hover-out 2s forwards;
-            animation: work-text-hover-out 2s forwards; }
-            .container .graphic .works-wrap .works-box a .works-box-hover div span, .container .motionfilm .works-wrap .works-box a .works-box-hover div span, .container .webvisual .works-wrap .works-box a .works-box-hover div span {
-              font-size: 14px;
-              color: #4d4d4d;
-              font-weight: normal; }
-        .container .graphic .works-wrap .works-box a img, .container .motionfilm .works-wrap .works-box a img, .container .webvisual .works-wrap .works-box a img {
-          padding-bottom: 7%; } }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,

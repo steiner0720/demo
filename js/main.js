@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
 	$(function(){
 		var $works_imgbox = $('.works-imgbox')
 		for (i = 0; i <  $works_imgbox.length + 1; i++){
-			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("http://y2yoga.com/wp-content/uploads/2014/04/bokeh-cover-bg1.jpg") no-repeat')
 		}
 		for (i = 13; i <  19; i++){
 			$('.webvisual').find($works_imgbox).eq(i - 13).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')

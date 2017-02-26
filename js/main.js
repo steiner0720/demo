@@ -5,13 +5,13 @@ jQuery(document).ready(function(){
 	$(function(){
 		var $works_imgbox = $('.works-imgbox')
 		for (i = 0; i <  $works_imgbox.length + 1; i++){
-			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'transparent url("../imgs/works_review/' + i  + '.png") no-repeat')
+			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
 		for (i = 13; i <  19; i++){
-			$('.webvisual').find($works_imgbox).eq(i - 13).css('background-image', 'url("../imgs/works_review/' + i  + '.png") no-repeat')
+			$('.webvisual').find($works_imgbox).eq(i - 13).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
 		for (i = 19; i <  23; i++){
-			$('.motionfilm').find($works_imgbox).eq(i - 19).css('background-image', 'url("../imgs/works_review/' + i  + '.png") no-repeat')
+			$('.motionfilm').find($works_imgbox).eq(i - 19).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
 
 	})

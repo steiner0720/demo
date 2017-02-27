@@ -749,7 +749,7 @@ body .fancybox-overlay-fixed {
   height: 100vh;
   background-color: #000;
   position: fixed;
-  z-index: 20;
+  z-index: 10;
   overflow: hidden; }
   .loading-page-bg .loading-page {
     margin: 38vh auto;

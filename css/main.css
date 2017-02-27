@@ -684,17 +684,17 @@ body {
         position: relative;
         z-index: 2;
         right: 30px;
-        top: -10px; }
+        top: -70px; }
       .section:nth-child(2) .intro .intro-name {
-        font-size: 16px;
+        font-size: 14px;
         color: #cacaca;
         font-weight: normal;
-        padding-bottom: 12%;
+        padding-bottom: 10%;
         text-align: right;
         position: relative;
-        z-index: 2;
+        z-index: 3;
         right: 30px;
-        top: 0px; }
+        top: -70px; }
       .section:nth-child(2) .intro .intro-year {
         font-size: 16px;
         color: #cacaca;
@@ -708,7 +708,7 @@ body {
         color: #cacaca;
         font-weight: normal;
         padding-top: 2%;
-        padding-bottom: 2%;
+        padding-bottom: 1%;
         margin-left: 12%;
         opacity: 0;
         line-height: 1.5em; }
@@ -716,7 +716,7 @@ body {
     text-align: center; }
     .section:nth-child(3) .award {
       height: 100vh;
-      padding-top: 22%;
+      padding-top: 27%;
       text-align: left; }
       .section:nth-child(3) .award h3 {
         font-size: 24px;
@@ -729,6 +729,7 @@ body {
         height: 1px;
         margin-right: 0px;
         margin-left: 0px;
+        margin-top: 2%;
         background-color: #856e40;
         overflow: hidden;
         opacity: 0; }
@@ -746,7 +747,7 @@ body {
         padding-top: 2%;
         font-weight: bold;
         margin-left: 20%;
-        line-height: 24px;
+        line-height: 18px;
         opacity: 0;
         margin-right: 10px;
         font-size: 14px; }
@@ -834,7 +835,7 @@ body {
   .section:nth-child(4) .works-icon {
     text-align: center;
     color: #fff;
-    padding-top: 30%;
+    padding-top: 25%;
     position: relative;
     z-index: 5; }
     .section:nth-child(4) .works-icon .works-icon-top div {
@@ -842,10 +843,10 @@ body {
       display: inline-block;
       line-height: 10px; }
       .section:nth-child(4) .works-icon .works-icon-top div:nth-child(2) {
-        margin-left: 10%;
-        margin-right: 10%; }
+        margin-left: 5%;
+        margin-right: 5%; }
       .section:nth-child(4) .works-icon .works-icon-top div img {
-        width: 60px; }
+        width: 50px; }
       .section:nth-child(4) .works-icon .works-icon-top div span {
         line-height: 25px;
         font-size: 16px; }
@@ -856,20 +857,20 @@ body {
         display: inline-block; }
         .section:nth-child(4) .works-icon .works-icon-bottom div:nth-child(1) {
           margin-left: 10%;
-          margin-right: 5%; }
+          margin-right: 2%; }
         .section:nth-child(4) .works-icon .works-icon-bottom div:nth-child(2) {
-          margin-left: 5%;
+          margin-left: 2%;
           margin-right: 10%; }
         .section:nth-child(4) .works-icon .works-icon-bottom div:nth-child(3) {
-          margin-top: 5%;
-          margin-left: 15%;
-          margin-right: 5%; }
+          margin-top: 7%;
+          margin-left: 9%;
+          margin-right: 2%; }
         .section:nth-child(4) .works-icon .works-icon-bottom div:nth-child(4) {
-          margin-top: 5%;
-          margin-left: 5%;
-          margin-right: 10%; }
+          margin-top: 7%;
+          margin-left: 9%;
+          margin-right: 2%; }
         .section:nth-child(4) .works-icon .works-icon-bottom div img {
-          width: 60px; }
+          width: 45px; }
         .section:nth-child(4) .works-icon .works-icon-bottom div span {
           line-height: 25px;
           font-size: 16px; }
@@ -885,7 +886,7 @@ body {
       width: 90%;
       height: 70px;
       left: 0px;
-      top: -40vh;
+      top: -42vh;
       position: relative;
       z-index: 1;
       padding-left: 10%;
@@ -901,7 +902,7 @@ body {
       width: 40%;
       height: 70px;
       left: 0px;
-      top: -17vh;
+      top: -20vh;
       z-index: 1;
       position: relative;
       padding-right: 40vh;

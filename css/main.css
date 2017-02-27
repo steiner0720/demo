@@ -689,7 +689,7 @@ body {
         font-size: 16px;
         color: #cacaca;
         font-weight: normal;
-        padding-bottom: 15%;
+        padding-bottom: 12%;
         text-align: right;
         position: relative;
         z-index: 2;
@@ -701,7 +701,6 @@ body {
         font-weight: bold;
         border-left: 4px solid #856e40;
         padding-left: 5%;
-        margin-top: 2%;
         margin-left: 12%;
         opacity: 0; }
       .section:nth-child(2) .intro .intro-content {
@@ -709,7 +708,7 @@ body {
         color: #cacaca;
         font-weight: normal;
         padding-top: 2%;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
         margin-left: 12%;
         opacity: 0;
         line-height: 1.5em; }
@@ -717,7 +716,7 @@ body {
     text-align: center; }
     .section:nth-child(3) .award {
       height: 100vh;
-      padding-top: 25%;
+      padding-top: 22%;
       text-align: left; }
       .section:nth-child(3) .award h3 {
         font-size: 24px;
@@ -739,7 +738,7 @@ body {
         font-size: 16px;
         color: #4d4d4d;
         font-weight: bold;
-        padding-top: 2%;
+        padding-top: 3%;
         float: left;
         margin-left: 20px;
         opacity: 0; }
@@ -749,7 +748,8 @@ body {
         margin-left: 20%;
         line-height: 24px;
         opacity: 0;
-        margin-right: 10px; }
+        margin-right: 10px;
+        font-size: 14px; }
       .section:nth-child(3) .award .award-content {
         font-weight: normal;
         padding-bottom: 1%;

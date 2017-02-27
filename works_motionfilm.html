@@ -12,23 +12,38 @@
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/TweenLite.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+<!-- loading page -->
+<div class="loading-page-bg">
+	<div class="loading-page">
+		<div class="dot1"></div>
+		<div class="dot2"></div>
+	</div>
+</div>
 <!-- nav -->
 <div class="nav">
-	<ul>
-		<li><a class="nav-logo" href="index.html">STEINER<br/>2013-2017</a></li>
-		<li><a class="nav-brief" href="index.html#brief">BRIEF</a></li>
-		<li>
-			<a class="nav-works" href="works_graphic.html">WORKS</a>
-			<div class="menu-works">
-				<a class="menu-works-g" href="works_graphic.html">GRAPHIC<br/></a>
-				<a class="menu-works-w"  href="works_webvisual.html">WEB VISUAL<br/></a>
-				<a class="menu-works-m"  href="works_motionfilm.html">MOTION FILM<br/></a>
-			</div>
-		</li>
-	</ul>
+	<div class="nav-logo-box"><a href="index.html"><div class="nav-logo">STEINER | 2013-2017</div></a></div>
+	<div class="nav-menu-box"><a href="#"><div class="btn-menu-open">menu</div></a></div>
+</div>
+<div class="nav-menu">
+	<div class="close-menu">CLOSE</div>
+	<div class="contact-info">
+		<h3>contact</h3>
+		<div class="email">eamil<div>steiner0720@gmail.com</div></div>
+		<div class="phone-number">phone number<div>0930984139</div></div>
+		<div class="facebook"><a href="https://www.facebook.com/craziness.july" target="view_window">facebook</a></div>
+	</div>
+	<div class="menu-list">
+		<h3>menu list</h3>
+		<div><a href="index.html#welcome">TOP</a></div>
+		<div><a href="index.html#brief">BRIEF</a></div>
+		<div><a href="works_graphic.html">GRAPHIC</a></div>
+		<div><a href="works_webvisual.html">WEB VISUAL</a></div>
+		<div><a href="works_motionfilm.html">MOTION FILM</a></div>
+	</div>
 </div>
 <!-- fullpage -->
 <div class="container" id="fullpage_works">

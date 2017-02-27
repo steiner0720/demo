@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title>Steiner-Wang</title>
 	<meta name="keywords" content="Steiner-Wang" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -12,37 +12,60 @@
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/TweenLite.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 	</script>
 </head>
 <body>
-<div class="nav">
-	<ul>
-		<li><a class="nav-logo" href="index.html">STEINER<br/>2013-2017</a></li>
-		<li><a class="nav-brief" href="index.html#brief">BRIEF</a></li>
-		<li>
-			<a class="nav-works" href="works_graphic.html">WORKS</a>
-			<div class="menu-works">
-				<a class="menu-works-g" href="works_graphic.html">GRAPHIC<br/></a>
-				<a class="menu-works-w"  href="works_webvisual.html">WEB VISUAL<br/></a>
-				<a class="menu-works-m"  href="works_motionfilm.html">MOTION FILM<br/></a>
-			</div>
-		</li>
-	</ul>
+<!-- loading page -->
+<div class="loading-page-bg">
+	<div class="loading-page">
+		<div class="dot1"></div>
+		<div class="dot2"></div>
+	</div>
 </div>
+<!-- nav -->
+<div class="nav">
+	<div class="nav-logo-box"><a href="index.html"><div class="nav-logo">STEINER | 2013-2017</div></a></div>
+	<div class="nav-menu-box"><a href="#"><div class="btn-menu-open">menu</div></a></div>
+</div>
+<div class="nav-menu">
+	<div class="close-menu">CLOSE</div>
+	<div class="contact-info">
+		<h3>contact</h3>
+		<div class="email">eamil<div>steiner0720@gmail.com</div></div>
+		<div class="phone-number">phone number<div>0930984139</div></div>
+		<div class="facebook"><a href="https://www.facebook.com/craziness.july" target="view_window">facebook</a></div>
+	</div>
+	<div class="menu-list">
+		<h3>menu list</h3>
+		<div><a href="index.html#welcome">TOP</a></div>
+		<div><a href="index.html#brief">BRIEF</a></div>
+		<div><a href="index.html#works_graphic">GRAPHIC</a></div>
+		<div><a href="index.html#works_webvisual">WEB VISUAL</a></div>
+		<div><a href="index.html#works_motionfilm">MOTION FILM</a></div>
+	</div>
+</div>
+<!-- fullpage -->
 <div class="container" id="fullpage">
+	<!-- 	section-1 welcome -->
 	<div class="section">
 		<h1 class="title-welcome">
 			<div class="title-welcome-color"></div>
 			<div class="title-welcome-first">STEINER</br></div>
 			<div class="title-welcome-second">2013-2017</div>
 		</h1>
-		<a href="#brief"><h2 class="scroll-down-text">BRIEF</h2></a>
-		<div class="scroll-down-brief"></div>
-		<a href="#brief"><img class="arrow-down" src="imgs/svg/arrow-down.svg"></a>
+		<div class="scroll-down">
+			<a href="#brief">
+				<div class="scroll-down-text">BRIEF</div>
+				<img src="imgs/svg/arrow-down.svg">
+			</a>
+		</div>
 	</div>
+	<!-- 	section-2 brief -->
 	<div class="section">
+		<div class="head-shot"><img src="imgs/brief.png"></div>
 		<div class="intro">
 			<h3>INTRODUCION</h3>
 			<div class="intro-name">王泰然 / STEINER - WANG</div>
@@ -53,6 +76,16 @@
 			<div class="intro-year">2016</div>
 			<div class="intro-content">通泰媒體應用股份有限公司<br/>PhiMedia</div>
 		</div>
+		<div class="scroll-down">
+			<a href="#awards">
+				<div class="scroll-down-text">AWARD RECORD</div>
+				<img src="imgs/svg/arrow-down.svg">
+			</a>
+		</div>
+
+	</div>
+	<!-- 	section-3 award -->
+	<div class="section">
 		<div class="award">
 			<h3>AWARD RECORD</h3>
 			<div class="award-line"></div>
@@ -68,71 +101,83 @@
 			<div class="award-year">2016</div>
 			<div class="award-name">Sony World Photography Awards<div class="award-content">Open Competition, Nature and Wild Life - Finalist Top9 <br/>Taiwan National Awards - 1st Winner<br/><a style="font-weight:bold;" href="http://uproxx.com/life/sony-world-photography-shortlist/">International Media report</a></div></div>
 		</div>
-		<div class="bg-brief"><img class="brief" src="imgs/brief.png"></div>
-		<a href="#feature"><h2 class="scroll-down-text-2">FEATURE</h2></a>
-		<a href="#feature"><img class="arrow-down-2" src="imgs/svg/arrow-down.svg"></a>
-		<div class="scroll-down-feature"></div>
+		<div class="scroll-down">
+			<a href="#feature">
+				<div class="scroll-down-text">FEATURE</div>
+				<img src="imgs/svg/arrow-down.svg">
+			</a>
+		</div>
 	</div>
+	<!-- 	section-4 feature -->
 	<div class="section">
 		<div class="works-icon">
 			<div class="works-icon-top">
-				<div class="works-icon-1"><img src="imgs/svg/icon_graphic.svg"><br/>Graphic</div>
-				<div><img src="imgs/svg/icon_webvisual.svg"><br/>Web Visual</div>
-				<div><img src="imgs/svg/icon_motionfilm.svg"><br/>Motion Film</div>
+				<div><img class="icon_img" src="imgs/svg/icon_graphic.svg"><span><br>Graphic</span></div>
+				<div><img class="icon_img" src="imgs/svg/icon_webvisual.svg"><span><br>Web Visual</span></div>
+				<div><img class="icon_img" src="imgs/svg/icon_motionfilm.svg"><span><br>Motion Film</span></div>
 			</div>
 			<div class="works-icon-bottom">
-				<div class="works-icon-4"><img src="imgs/svg/icon_photography.svg"><br/>Photography</div>
-				<div><img src="imgs/svg/icon_css.svg"><br/>Html / CSS</div>
-				<div><img src="imgs/svg/icon_jquery.svg"><br/>jQuery</div>
-				<div><img src="imgs/svg/icon_aftereffect.svg"><br/>After Effect</div>
+				<div><img class="icon_img" src="imgs/svg/icon_photography.svg"><span><br>Photography</span></div>
+				<div><img class="icon_img" src="imgs/svg/icon_css.svg"><span><br>Html / CSS</span></div>
+				<div><img class="icon_img" src="imgs/svg/icon_jquery.svg"><span><br>jQuery</span></div>
+				<div><img class="icon_img" src="imgs/svg/icon_aftereffect.svg"><span><br>After Effect</span></div>
 			</div>
 		</div>
 		<div class="main-works"><div>MAIN WORKS</div>&nbsp</div>
 		<div class="sub-works"><div>SUB SKILLS</div>&nbsp</div>
-		<a href="#works-graphic"><h2 class="scroll-down-text-3">WORKS</h2></a>
-		<a href="#works-graphic"><img class="arrow-down-3" src="imgs/svg/arrow-down.svg"></a>
-		<div class="scroll-down-works"></div>
-	</div>
-	<div class="section">
-		<div class="works-content">
-				<div id ="wkt_1" class="works-text"></a>
-					<h2 class="works-content-h2">WORKS</h2>
-					<h3 class="works-content-h3">Graphic</h3>
-					<a href="works_graphic.html"><img src="imgs/svg/arrow-right.svg"></a>
-					<p class="works-content-p">Poster / Branding / Packging / Book / Event</p>
-				</div>
-			<div id ="wkbg_1" class="works-content-bg"></div>
-		</div>
-		<a href="#works-webvisual"><h2 class="scroll-down-text-3">WEB VISUAL</h2></a>
-		<a href="#works-webvisual"><img class="arrow-down-3" src="imgs/svg/arrow-down.svg"></a>
-		<div class="scroll-down-works"></div>
-	</div>
-	<div class="section">
-		<div class="works-content">
-				<div id ="wkt_2" class="works-text">
-					<h2 class="works-content-h2">WORKS</h2>
-					<h3 class="works-content-h3">Web Visual</h3>
-					<a href="works_webvisual.html"><img src="imgs/svg/arrow-right.svg"></a>
-					<p class="works-content-p">Office website / Event page / eDM</p>
-				</div>
-			<div id ="wkbg_2" class="works-content-bg"></div>
-		</div>
-		<a href="#works-motionfilm"><h2 class="scroll-down-text-3">MOTION FILM</h2></a>
-		<a href="#works-motionfilm"><img class="arrow-down-3" src="imgs/svg/arrow-down.svg"></a>
-		<div class="scroll-down-works"></div>
-	</div>
-	<div class="section">
-		<div class="works-content">
-				<div id ="wkt_3" class="works-text">
-					<h2 class="works-content-h2">WORKS</h2>
-					<h3 class="works-content-h3">Motion Film</h3>
-					<a href="works_motionfilm.html"><img id="works_arrow" src="imgs/svg/arrow-right.svg"></a>
-					<p class="works-content-p">Intro Film / Live Broadcast</p>
-				</div>
-			<div id ="wkbg_3" class="works-content-bg"></div>
-			<p class="works-content-p"></p>
+		<div class="scroll-down">
+			<a href="#works_graphic">
+				<div class="scroll-down-text">GRAPHIC</div>
+				<img src="imgs/svg/arrow-down.svg">
+			</a>
 		</div>
 	</div>
+	<!-- 	section-5 graphic -->
+	<div class="section">
+		<div class="works-content-box">
+			<h2 class="works-content-h2">WORKS</h2>
+			<h3 class="works-content-h3">Graphic</h3>
+			<a href="works_graphic.html">
+				<div class="works-link-bg"><img src="imgs/svg/arrow-right.svg"></div>
+			</a>
+			<p class="works-content-p">Poster / Branding / Packging / Book / Event</p>
+		</div>
+		<div class="scroll-down">
+			<a href="#works_webvisual">
+				<div class="scroll-down-text">WEB VISUAL</div>
+				<img src="imgs/svg/arrow-down.svg">
+			</a>
+		</div>
+	</div>
+	<!-- 	section-6 webvisual -->
+	<div class="section">
+		<div class="works-content-box">
+			<h2 class="works-content-h2">WORKS</h2>
+			<h3 class="works-content-h3">Web Visual</h3>
+			<a href="works_webvisual.html">
+				<div class="works-link-bg"><img src="imgs/svg/arrow-right.svg"></div>
+			</a>
+			<p class="works-content-p">Office website / Event page / eDM</p>
+		</div>
+		<div class="scroll-down">
+			<a href="#works_motionfilm">
+				<div class="scroll-down-text">MOTION FILM</div>
+				<img src="imgs/svg/arrow-down.svg">
+			</a>
+		</div>
+	</div>
+	<div class="section">
+		<div class="works-content-box">
+			<h2 class="works-content-h2">WORKS</h2>
+			<h3 class="works-content-h3">Motion Film</h3>
+			<a href="works_motionfilm.html">
+				<div class="works-link-bg"><img src="imgs/svg/arrow-right.svg"></div>
+			</a>
+			<p class="works-content-p">Intro Film / Live Broadcast</p>
+		</div>
+
+	</div>
+
 </div>
 </body>
 </html>

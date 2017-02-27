@@ -10,6 +10,7 @@ jQuery(document).ready(function(){
 		var $works_imgbox = $('.works-imgbox')
 		for (i = 0; i <  $works_imgbox.length + 1; i++){
 			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+
 		}
 		for (i = 13; i <  19; i++){
 			$('.webvisual').find($works_imgbox).eq(i - 13).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
@@ -17,7 +18,8 @@ jQuery(document).ready(function(){
 		for (i = 19; i <  23; i++){
 			$('.motionfilm').find($works_imgbox).eq(i - 19).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
-
+		$('.works-imgbox').css('backgroundSize', 'cover')
+		$('.works-imgbox').css('backgroundPosition', 'center')
 	})
 
 
@@ -161,7 +163,7 @@ jQuery(document).ready(function(){
 	    	openEffect	: 'elastic',
 	    	closeEffect	: 'elastic',
 	    	width : '100%',
-	    	height : '75%',
+	    	height : '85%',
 	    	autoSize : false,
 	    	fitToView: true,
 	    	scrolling : 'no',

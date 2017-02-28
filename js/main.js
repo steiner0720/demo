@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
 
-// 	$(window).on('load', function(){
-// 		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
-// 	})
+	$(window).on('load', function(){
+		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
+	})
 
 
 	// for loop works-box bg img //
@@ -12,11 +12,11 @@ jQuery(document).ready(function(){
 			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 
 		}
-		for (i = 12; i <  18; i++){
+		for (i = 12; i <  17; i++){
 			$('.webvisual').find($works_imgbox).eq(i - 12).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
-		for (i = 18; i <  22; i++){
-			$('.motionfilm').find($works_imgbox).eq(i - 18).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+		for (i = 17; i <  21; i++){
+			$('.motionfilm').find($works_imgbox).eq(i - 17).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
 		$('.works-imgbox').css('backgroundSize', 'cover')
 		$('.works-imgbox').css('backgroundPosition', 'center')
@@ -136,7 +136,7 @@ jQuery(document).ready(function(){
 
 
 
-	//nav function //
+	//nav open effect //
 	$(function(){
 		$('.btn-menu-open').click(function(){
 			$('.nav-menu').stop(true,false).animate({height: '100vh'}, 500, 'easeOutQuad')
@@ -163,11 +163,18 @@ jQuery(document).ready(function(){
 	    	openEffect	: 'elastic',
 	    	closeEffect	: 'elastic',
 	    	width : '100%',
-	    	height : '95%',
+	    	height : '100%',
 	    	autoSize : false,
 	    	fitToView: true,
 	    	scrolling : 'no',
 	    	padding : 0,
+	    	// when fancy open, body can't scroll-Y //
+		    beforeShow: function(){
+		        $("body").css({'overflow-y':'hidden'})
+		    },
+		    afterClose: function(){
+		        $("body").css({'overflow-y':'visible'})
+		    },
 	    	helpers : {
 	    		title : {
 	    			type : 'inside'

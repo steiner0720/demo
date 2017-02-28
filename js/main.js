@@ -12,11 +12,11 @@ jQuery(document).ready(function(){
 			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 
 		}
-		for (i = 13; i <  19; i++){
-			$('.webvisual').find($works_imgbox).eq(i - 13).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+		for (i = 12; i <  18; i++){
+			$('.webvisual').find($works_imgbox).eq(i - 12).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
-		for (i = 19; i <  23; i++){
-			$('.motionfilm').find($works_imgbox).eq(i - 19).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+		for (i = 18; i <  22; i++){
+			$('.motionfilm').find($works_imgbox).eq(i - 18).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
 		$('.works-imgbox').css('backgroundSize', 'cover')
 		$('.works-imgbox').css('backgroundPosition', 'center')
@@ -163,7 +163,7 @@ jQuery(document).ready(function(){
 	    	openEffect	: 'elastic',
 	    	closeEffect	: 'elastic',
 	    	width : '100%',
-	    	height : '85%',
+	    	height : '95%',
 	    	autoSize : false,
 	    	fitToView: true,
 	    	scrolling : 'no',

@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
 
-	$(window).on('load', function(){
-		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
-	})
+// 	$(window).on('load', function(){
+// 		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
+// 	})
 
 
 	// for loop works-box bg img //

@@ -1268,6 +1268,7 @@ body {
               width: 0px;
               margin: 0px;
               background-color: #856e40;
+              overflow: hidden;
               -webkit-animation: work-hover-out 1s forwards;
               animation: work-hover-out 1s forwards; }
               .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div {
@@ -1319,7 +1320,7 @@ body {
     margin-top: 15%;
     margin-left: 15%;
     margin-right: 15%;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     line-height: 32px; }
     .carousel .works-content .works-content-year {
@@ -1330,11 +1331,12 @@ body {
       color: #4d4d4d; }
     .carousel .works-content .works-content-title {
       font-size: 20px;
+      color: #856e40;
       padding-bottom: 4%;
       border-bottom: 1px solid #333333; }
     .carousel .works-content .works-content-spec {
       font-size: 20px;
-      color: #856e40;
+      color: #cacaca;
       padding-top: 4%; }
     .carousel .works-content .works-content-discription {
       font-size: 16px;
@@ -1474,7 +1476,6 @@ body {
         border-bottom: 1px solid #333333; }
       .carousel .works-content .works-content-spec {
         font-size: 20px;
-        color: #856e40;
         padding-top: 4%; }
       .carousel .works-content .works-content-discription {
         font-size: 14px;

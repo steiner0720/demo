@@ -15,9 +15,9 @@ jQuery(document).ready(function(){
 		for (i = 12; i <  17; i++){
 			$('.webvisual').find($works_imgbox).eq(i - 12).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
 		}
-		// for (i = 17; i <  21; i++){
-		// 	$('.motionfilm').find($works_imgbox).eq(i - 17).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
-		// }
+		for (i = 17; i <  21; i++){
+			$('.motionfilm').find($works_imgbox).eq(i - 17).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+		}
 		$('.works-imgbox').css('backgroundSize', 'cover')
 		$('.works-imgbox').css('backgroundPosition', 'center')
 	})

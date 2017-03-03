@@ -549,7 +549,7 @@ iframe {
       font-size: 16px;
       padding-bottom: 5%;
       padding-right: 0px;
-      color: #cacaca; }
+      color: #333333; }
     .nav-menu .menu-list a {
       color: #fff;
       text-decoration: none;
@@ -633,7 +633,7 @@ iframe {
       font-size: 20px;
       padding-bottom: 2%;
       padding-right: 0px;
-      color: #cacaca; }
+      color: #333333; }
     .nav-menu .menu-list a {
       color: #fff;
       text-decoration: none;
@@ -707,7 +707,7 @@ iframe {
     float: left; }
     .section:nth-child(2) .head-shot img {
       position: relative;
-      top: 20%;
+      top: 23%;
       width: 80%;
       opacity: 0; }
   .section:nth-child(2) .intro {
@@ -734,6 +734,10 @@ iframe {
       border-left: 4px solid #856e40;
       padding-left: 3%;
       opacity: 0; }
+      .section:nth-child(2) .intro .intro-year img {
+        width: 70px;
+        margin-right: 30px;
+        margin-left: 10px; }
     .section:nth-child(2) .intro .intro-content {
       font-size: 16px;
       color: #cacaca;
@@ -771,14 +775,14 @@ iframe {
       margin-left: 28%;
       opacity: 0; }
     .section:nth-child(3) .award .award-name {
-      padding-top: 1%;
+      padding-top: .5%;
       font-weight: bold;
       margin-left: 43%;
       line-height: 24px;
       opacity: 0; }
     .section:nth-child(3) .award .award-content {
       font-weight: normal;
-      padding-bottom: 1%; }
+      padding-bottom: .5%; }
       .section:nth-child(3) .award .award-content a {
         text-decoration: none;
         color: #856e40;
@@ -834,6 +838,8 @@ iframe {
         padding-left: 5%;
         margin-left: 12%;
         opacity: 0; }
+        .section:nth-child(2) .intro .intro-year img {
+          display: none; }
       .section:nth-child(2) .intro .intro-content {
         font-size: 14px;
         color: #cacaca;
@@ -917,12 +923,12 @@ iframe {
         color: #cacaca;
         font-weight: bold;
         padding-top: 30%;
-        padding-bottom: 2%; }
+        margin-bottom: 2%; }
       .section:nth-child(2) .intro .intro-name {
         font-size: 16px;
         color: #cacaca;
         font-weight: normal;
-        padding-bottom: 5%; }
+        margin-bottom: 10%; }
       .section:nth-child(2) .intro .intro-year {
         font-size: 50px;
         color: #333333;
@@ -934,8 +940,8 @@ iframe {
         font-size: 16px;
         color: #cacaca;
         font-weight: normal;
-        padding-top: 2%;
-        padding-bottom: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         opacity: 0;
         line-height: 1.5em; }
   .section:nth-child(3) {

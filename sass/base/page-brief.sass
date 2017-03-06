@@ -1,0 +1,314 @@
+
+
+// brief page //
+.section
+	&:nth-child(2)
+		z-index: 1
+		.head-shot
+			background-color: #000
+			width: 50%
+			height: 100%
+			float: left
+			img
+				position: relative
+				top: 23%
+				width: 80%
+				opacity: 0
+		.intro
+			float: left
+			background-color: #000
+			height: 100vh
+			width: 50%
+			text-align: left
+			h3
+				font-size: $size-H3
+				color: $color-4
+				font-weight: bold
+				padding-top: 15%
+				padding-bottom: 2%
+			.intro-name
+				font-size: $size-p
+				color: $color-4
+				font-weight: normal
+				padding-bottom: 5%
+			.intro-year
+				font-size: $size-H2
+				color: $color-2
+				font-weight: normal
+				border-left: 4px solid $color-spec
+				padding-left: 3%
+				opacity: 0
+				img
+					width: 70px
+					margin-right: 30px
+					margin-left: 10px
+			.intro-content
+				font-size: $size-p
+				color: $color-4
+				font-weight: normal
+				padding-top: 2%
+				padding-bottom: 5%
+				opacity: 0
+				line-height: 1.5em
+
+
+
+
+// awards //
+.section
+	&:nth-child(3)
+		text-align: center
+		.award
+			height: 100vh
+			padding-top: 8%
+			text-align: left
+			h3
+				font-size: $size-H3
+				color: $color-2
+				font-weight: bold
+				padding-bottom: 2%
+				text-align: center
+			.award-line
+				height: 2px
+				margin-right: 28%
+				margin-left: 28%
+				background-color: $color-spec
+				overflow: hidden
+				opacity: 0
+			.award-year
+				font-size: $size-H4
+				color: $color-4
+				font-weight: bold
+				padding-top: 1%
+				float: left
+				margin-left: 28%
+				opacity: 0
+			.award-name
+				padding-top: .5%
+				font-weight: bold
+				margin-left: 43%
+				line-height: 24px
+				opacity: 0
+			.award-content
+				font-weight: normal
+				padding-bottom: .5%
+				a
+					text-decoration: none
+					color: $color-spec
+					white-space: nowrap
+
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px)
+	// brief page //
+	.section
+		&:nth-child(2)
+			z-index: 1
+			.head-shot
+				background-color: #000
+				width: 100%
+				height: 30vh
+				float: clear
+				img
+					position: relative
+					top: 40%
+					width: 50%
+					left: 0vh
+					opacity: 0
+					z-index: 1
+			.intro
+				float: left
+				background-color: #000
+				height: 70vh
+				width: 100%
+				text-align: left
+				h3
+					font-size: $size-H4
+					color: $color-4
+					font-weight: bold
+					padding-top: 0px
+					padding-bottom: 2%
+					text-align: right
+					position: relative
+					z-index: 2
+					right: 30px
+					top: -70px
+				.intro-name
+					font-size: 14px
+					color: $color-4
+					font-weight: normal
+					padding-bottom: 10%
+					text-align: right
+					position: relative
+					z-index: 3
+					right: 30px
+					top: -70px
+				.intro-year
+					font-size: $size-p
+					color: $color-4
+					font-weight: bold
+					border-left: 4px solid $color-spec
+					padding-left: 5%
+					margin-left: 12%
+					opacity: 0
+					img
+						display: none
+				.intro-content
+					font-size: 14px
+					color: $color-4
+					font-weight: normal
+					padding-top: 2%
+					padding-bottom: 1%
+					margin-left: 12%
+					opacity: 0
+					line-height: 1.5em
+	// awards //
+	.section
+		&:nth-child(3)
+			text-align: center
+			.award
+				height: 100vh
+				padding-top: 27%
+				text-align: left
+				h3
+					font-size: $size-H4
+					color: $color-2
+					font-weight: bold
+					padding-bottom: 2%
+					text-align: center
+					display: none
+				.award-line
+					height: 1px
+					margin-right: 0px
+					margin-left: 0px
+					margin-top: 2%
+					background-color: $color-spec
+					overflow: hidden
+					opacity: 0
+					&:nth-child(2)
+						display: none
+				.award-year
+					font-size: $size-p
+					color: $color-3
+					font-weight: bold
+					padding-top: 3%
+					float: left
+					margin-left: 20px
+					opacity: 0
+				.award-name
+					padding-top: 2%
+					font-weight: bold
+					margin-left: 20%
+					line-height: 18px
+					opacity: 0
+					margin-right: 10px
+					font-size: 14px
+				.award-content
+					font-weight: normal
+					padding-bottom: 1%
+					font-size: 14px
+					margin-right: 20px
+					a
+						text-decoration: none
+						color: $color-spec
+						white-space: nowrap
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1100px)
+	.section
+		&:nth-child(2)
+			z-index: 1
+			.head-shot
+				background-color: #000
+				width: 50%
+				height: 100%
+				float: left
+				img
+					position: relative
+					top: 20%
+					width: 100%
+					opacity: 0
+					left: -5%
+			.intro
+				float: left
+				background-color: #000
+				height: 100vh
+				width: 50%
+				text-align: left
+				h3
+					font-size: $size-H3
+					color: $color-4
+					font-weight: bold
+					padding-top: 30%
+					margin-bottom: 2%
+				.intro-name
+					font-size: $size-p
+					color: $color-4
+					font-weight: normal
+					margin-bottom: 10%
+				.intro-year
+					font-size: $size-H2
+					color: $color-2
+					font-weight: normal
+					border-left: 4px solid $color-spec
+					padding-left: 3%
+					opacity: 0
+				.intro-content
+					font-size: $size-p
+					color: $color-4
+					font-weight: normal
+					margin-top: 5%
+					margin-bottom: 5%
+					opacity: 0
+					line-height: 1.5em
+
+
+	// awards //
+	.section
+		&:nth-child(3)
+			text-align: center
+			.award
+				height: 100vh
+				padding-top: 15%
+				text-align: left
+				h3
+					font-size: $size-H3
+					color: $color-2
+					font-weight: bold
+					padding-bottom: 2%
+					text-align: center
+				.award-line
+					height: 2px
+					margin-right: 10%
+					margin-left: 10%
+					margin-top: 1%
+					background-color: $color-spec
+					overflow: hidden
+					opacity: 0
+				.award-year
+					font-size: $size-H4
+					color: $color-4
+					font-weight: bold
+					padding-top: 3%
+					float: left
+					margin-left: 10%
+					opacity: 0
+				.award-name
+					padding-top: 3%
+					font-weight: bold
+					margin-left: 30%
+					margin-right: 10%
+					line-height: 20px
+					opacity: 0
+				.award-content
+					font-weight: normal
+					padding-top: 0px
+					a
+						text-decoration: none
+						color: $color-spec
+						white-space: nowrap

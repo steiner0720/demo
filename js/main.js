@@ -1,8 +1,8 @@
 jQuery(document).ready(function(){
 
-	$(window).on('load', function(){
-		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
-	})
+	// $(window).on('load', function(){
+	// 	$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
+	// })
 
 
 	// for loop works-box bg img //
@@ -21,6 +21,22 @@ jQuery(document).ready(function(){
 		$('.works-imgbox').css('backgroundSize', 'cover')
 		$('.works-imgbox').css('backgroundPosition', 'center')
 	})
+
+
+	// attr flickity img //
+	$(function(){
+		var project_N = $('.carousel').length
+		var img_N = $('.carousel-cell img').length
+		for( i = 1; i <= project_N; i++){
+			for ( p = 1; p <= project_N; p++){
+				for( q = 1; q <= img_N; q++){
+					$('.carousel').eq(i-1).find('.carousel-cell img').eq(p).attr('src', 'imgs/works/' + img_N + '-' + p + '.jpg')
+				}
+			}
+		}
+	})
+
+
 
 
 

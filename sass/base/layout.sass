@@ -1,0 +1,292 @@
+@mixin bg
+	background-position: center
+	background-size: cover
+	// height: 100vh
+
+$size-H2: 50px
+$size-H3: 32px
+$size-H4: 24px
+$size-H5: 20px
+$size-p: 16px
+
+$color-1: #1a1a1a
+$color-2: #333333
+$color-3: #4d4d4d
+$color-4: #cacaca
+$color-spec: #856e40
+
+body
+    font-family: 'Yu Gothic', YuGothic, 'Helvetica Nueue', Arial, 微軟正黑體, sans-serif
+iframe
+	width: 150vh
+	height: 90vh
+
+
+
+.section
+	width: 100%
+	height: 100vh
+	+bg
+	&:nth-child(1)
+		background-color: #fff
+		background-image: url(../imgs/bg_welcome.png)
+	&:nth-child(2)
+		background-color: #fff
+	&:nth-child(3)
+		background-color: #fff
+	&:nth-child(4)
+		background-color: $color-1
+	&:nth-child(5)
+		background-color: $color-1
+		background-image: url(../imgs/bg_index_graphic.png)
+	&:nth-child(6)
+		background-color: $color-1
+		background-image: url(../imgs/bg_index_webvisual.png)
+	&:nth-child(7)
+		background-color: $color-1
+		background-image: url(../imgs/bg_index_motionfilm.png)
+
+
+
+
+
+
+
+
+
+
+
+
+// works-btn hover //
+@-webkit-keyframes works-btn-in
+	0%
+		margin-left: 40%
+		margin-right: 40%
+		background-color: $color-1
+	100%
+		margin-left: 35%
+		margin-right: 35%
+		background-color: $color-spec
+
+@-webkit-keyframes works-btn-out
+	0%
+		margin-left: 35%
+		margin-right: 35%
+		background-color: $color-spec
+
+	100%
+		margin-left: 40%
+		margin-right: 40%
+		background-color: $color-1
+
+
+// works-btn mobile hover //
+@-webkit-keyframes works-mobile-btn-in
+	0%
+		margin-left: 10%
+		margin-right: 10%
+		background-color: $color-1
+	100%
+		margin-left: 15%
+		margin-right: 15%
+		background-color: $color-spec
+
+@-webkit-keyframes works-mobile-btn-out
+	0%
+		margin-left: 15%
+		margin-right: 15%
+		background-color: $color-spec
+
+	100%
+		margin-left: 10%
+		margin-right: 10%
+		background-color: $color-1
+
+// works-btn pad hover //
+@-webkit-keyframes works-pad-btn-in
+	0%
+		margin-left: 20%
+		margin-right: 20%
+		background-color: $color-1
+	100%
+		margin-left: 30%
+		margin-right: 30%
+		background-color: $color-spec
+
+@-webkit-keyframes works-pad-btn-out
+	0%
+		margin-left: 30%
+		margin-right: 30%
+		background-color: $color-spec
+
+	100%
+		margin-left: 20%
+		margin-right: 20%
+		background-color: $color-1
+
+
+
+
+
+// works * 3 pag3 //
+.section
+	.works-content-box
+		text-align: center
+		color: #fff
+		position: relative
+		top: 30%
+		font-weight: bold
+		z-index: 2
+		.works-content-h2
+			font-size: $size-H2
+			padding-bottom: 1%
+		.works-content-h3
+			padding-bottom: 2%
+			font-size: $size-H3
+		.works-content-p
+			font-size: $size-p
+			color: #fff
+			padding-top: 2%
+		a
+			.works-link-bg
+				margin-left: 40%
+				margin-right: 40%
+				z-index: 2
+				height: 100px
+				background-color: $color-1
+				animation: works-btn-out .5s forwards
+				img
+					padding-top: 20px
+					z-index: 3
+					width: 120px
+			.works-link-bg:hover
+				animation: works-btn-in .5s forwards
+
+
+// all scroll-down line //
+.scroll-down
+	position: absolute
+	width: 100%
+	height: 10%
+	z-index: 10
+	background-color: $color-spec
+	text-align: center
+	a
+		position: relative
+		text-decoration: none
+		white-space: nowrap
+		.scroll-down-text
+			position: relative
+			font-weight: bold
+			top: -7vh
+			color: $color-4
+			font-size: $size-H2
+		img
+			position: relative
+			width: 20px
+			top: -3vh
+
+
+
+
+	// works * 3 pag3 //	// all scroll-down line //
+@media only screen and (min-width: 300px) and (max-width: 767px)
+	.section
+		&:nth-child(2)
+			.scroll-down
+				display: none
+		&:nth-child(3)
+			.scroll-down
+				display: none
+		&:nth-child(4)
+			.scroll-down
+				display: none
+		.scroll-down
+			a
+				.scroll-down-text
+					font-size: $size-H3
+				img
+					top: -4vh
+	.section
+		.works-content-box
+			text-align: center
+			color: #fff
+			position: relative
+			top: 25%
+			font-weight: bold
+			z-index: 2
+			.works-content-h2
+				font-size: $size-H2
+				padding-bottom: 5%
+			.works-content-h3
+				padding-bottom: 5%
+				font-size: $size-H3
+			.works-content-p
+				font-size: $size-p
+				color: #fff
+				padding-top: 5%
+			a
+				.works-link-bg
+					margin-left: 10%
+					margin-right: 10%
+					z-index: 2
+					height: 100px
+					background-color: $color-1
+					animation: works-mobile-btn-out .5s forwards
+					img
+						padding-top: 30px
+						z-index: 3
+						width: 80px
+				.works-link-bg:hover
+					animation: works-mobile-btn-in .5s forwards
+
+
+
+	// works * 3 pag3 //	// all scroll-down line //
+@media only screen and (min-width: 768px) and (max-width: 1100px)
+
+	.section
+		.works-content-box
+			.works-content-h2
+				font-size: $size-H2
+				padding-bottom: 5%
+			.works-content-h3
+				padding-bottom: 5%
+				font-size: $size-H3
+			.works-content-p
+				font-size: $size-p
+				padding-top: 5%
+			a
+				.works-link-bg
+					margin-left: 20%
+					margin-right: 20%
+					height: 100px
+					animation: works-pad-btn-out .5s forwards
+					img
+						padding-top: 25px
+						width: 100px
+				.works-link-bg:hover
+					animation: works-pad-btn-in .5s forwards
+
+
+	// .scroll-down
+	// 	position: absolute
+	// 	width: 100%
+	// 	height: 10%
+	// 	z-index: 10
+	// 	background-color: $color-spec
+	// 	text-align: center
+	// 	a
+	// 		position: relative
+	// 		text-decoration: none
+	// 		white-space: nowrap
+	// 		.scroll-down-text
+	// 			position: relative
+	// 			font-weight: bold
+	// 			top: -7vh
+	// 			color: $color-4
+	// 			font-size: $size-H2
+	// 		img
+	// 			position: relative
+	// 			width: 20px
+	// 			top: -3vh

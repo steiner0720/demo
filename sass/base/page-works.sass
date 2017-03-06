@@ -1,0 +1,356 @@
+
+// work-hover //
+@-webkit-keyframes work-hover-in
+	0%
+		width: 0px
+		height: 100%
+		background-color: $color-spec
+	20%
+	100%
+		width: 100%
+		height: 100%
+		background-color: $color-1
+@-webkit-keyframes work-hover-out
+	0%
+		width: 100%
+		height: 100%
+		background-color: $color-1
+	20%
+	100%
+		width: 0px
+		height: 100%
+		background-color: $color-spec
+// work-text-hover //
+@-webkit-keyframes work-text-hover-in
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+@-webkit-keyframes work-text-hover-out
+	100
+		opacity: 1
+	0
+		opacity: 0
+
+
+
+
+
+.container
+	.works
+		background-color: $color-1
+		.graphic, .motionfilm, .webvisual
+			// overflow: hidden
+			height: 100vh
+			h3
+				text-align: center
+				padding-top: 8%
+				padding-bottom: 2%
+				font-size: $size-H3
+				font-weight: bold
+				color: $color-4
+
+			.works-wrap
+				+bg
+				background-image: url(../imgs/svg/bg_works_graphic.svg)
+				background-color: $color-1
+				.works-box
+					display: inline-block
+					padding-left: 5%
+					padding-right: 5%
+					padding-top: 2%
+					padding-bottom: 3%
+
+					.works-imgbox:hover .works-box-hover
+						animation: work-hover-in 1s forwards
+					.works-imgbox:hover .works-box-hover-text
+						animation: work-text-hover-in 2s forwards
+					.works-imgbox
+						width: 360px // #img width //
+						height: 202px
+						margin-bottom: 20px // #category height //
+						// box-shadow: 0px 0px 30px #0F0F0F
+						// background-color: $color-2
+						background-size: cover
+						a
+							text-decoration: none
+							white-space: nowrap
+							color: #fff
+							.works-box-hover
+								width: 0px
+								margin: 0px
+								background-color: $color-spec
+								overflow: hidden
+								animation: work-hover-out 1s forwards
+								div // works-box-hover-text //
+									font-size: 20px
+									color: $color-spec
+									font-weight: bold
+									line-height: 28px
+									white-space: normal
+									text-align: center
+									opacity: 0
+									padding-top: 30px // font padding //
+									height: 100px // hover height //
+									animation: work-text-hover-out 2s forwards
+									span
+										font-size: 16px
+										color: $color-4
+										font-weight: normal
+							img
+								padding-bottom: 7%
+					span
+						font-size: $size-p
+						font-weight: normal
+						color: $color-4
+
+		.webvisual
+			.works-wrap
+				+bg
+				background-color: $color-1
+				background-image: url(../imgs/svg/bg_works_webvisual.svg)
+		.motionfilm
+			.works-wrap
+				+bg
+				background-color: $color-1
+				background-image: url(../imgs/svg/bg_works_motionfilm.svg)
+
+
+
+
+
+
+/* external css: flickity.css */
+
+.works
+	.carousel
+		width: 100%
+		height: 100%
+		position: absolute
+		z-index: -1
+		overflow: hidden
+
+
+.carousel
+	background: #1a1a1a
+	height: 100%
+	.works-content
+		color: $color-4
+		margin-top: 15%
+		margin-left: 15%
+		margin-right: 15%
+		text-align: center
+		font-weight: bold
+		line-height: 32px
+		.works-content-year
+			font-size: $size-H2
+			color: $color-4
+			margin-bottom: 5%
+		.works-content-category
+			color: $color-3
+		.works-content-title
+			font-size: $size-H5
+			color: $color-spec
+			padding-bottom: 4%
+			border-bottom: 1px solid $color-2
+		.works-content-spec
+			font-size: $size-H5
+			color: $color-4
+			padding-top: 4%
+		.works-content-discription
+			font-size: $size-p
+			color: $color-4
+			font-weight: normal
+			a
+				color: $color-spec
+				text-decoration: none
+				font-weight: bold
+
+
+.carousel-cell
+	margin-right: 20px
+	overflow: hidden
+	img
+		height: 88vh
+.flickity-prev-next-button.next
+	margin-right: 40%
+	top: 92vh
+.flickity-prev-next-button.previous
+	margin-left: 40%
+	top: 92vh
+
+
+
+// fancybox //
+
+.fancybox-inner
+	overflow: hidden
+.fancybox-skin
+	padding: 0
+.fancybox-title, .fancybox-title-inside-wrap
+	display: none
+
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px)
+	.container
+		.works
+			background-color: $color-1
+			.graphic, .motionfilm, .webvisual
+				// overflow: hidden
+				height: 100vh
+				h3
+					text-align: center
+					padding-top: 25%
+					padding-bottom: 2%
+					font-size: $size-H3
+					font-weight: bold
+					color: $color-4
+				.works-wrap
+					+bg
+					background-image: url(../imgs/svg/bg_works_graphic.svg)
+					background-color: $color-1
+					.works-box
+						display: inline-block
+						padding-left: 0px
+						padding-right: 0px
+						padding-top: 15%
+						padding-bottom: 3%
+
+						.works-imgbox:hover .works-box-hover
+							animation: work-hover-in 1s forwards
+						.works-imgbox:hover .works-box-hover-text
+							animation: work-text-hover-in 2s forwards
+						.works-imgbox
+							width: 288px // #img width //
+							height: 162px
+							margin-bottom: 20px // #category height //
+							background-size: cover
+							a
+								text-decoration: none
+								white-space: nowrap
+								color: #fff
+								.works-box-hover
+									width: 0px
+									margin: 0px
+									background-color: $color-spec
+
+									animation: work-hover-out 1s forwards
+									div // works-box-hover-text //
+										font-size: 20px
+										color: $color-spec
+										font-weight: bold
+										line-height: 28px
+										white-space: normal
+										text-align: center
+										opacity: 0
+										padding-top: 30px // font padding //
+										height: 100px // hover height //
+										animation: work-text-hover-out 2s forwards
+										span
+											font-size: 16px
+											color: $color-4
+											font-weight: normal
+								img
+						span
+							font-size: $size-p
+							font-weight: normal
+							color: $color-4
+
+			.webvisual
+				.works-wrap
+					+bg
+					background-color: $color-1
+					background-image: url(../imgs/svg/bg_works_webvisual.svg)
+			.motionfilm
+				.works-wrap
+					+bg
+					background-color: $color-1
+					background-image: url(../imgs/svg/bg_works_motionfilm.svg)
+
+
+
+
+
+
+	/* external css: flickity.css */
+
+	.works
+		.carousel
+			width: 100%
+			height: 50%
+			position: absolute
+			z-index: -1
+			overflow: hidden
+
+
+	.carousel
+		background: #1a1a1a
+		height: 100%
+		.works-content
+			color: $color-4
+			margin-top: 15%
+			margin-left: 15%
+			margin-right: 15%
+			text-align: right
+			font-weight: bold
+			line-height: 32px
+			.works-content-year
+				font-size: $size-H3
+				color: $color-4
+				margin-bottom: 5%
+			.works-content-category
+				color: $color-3
+			.works-content-title
+				font-size: $size-H5
+				padding-bottom: 4%
+				border-bottom: 1px solid $color-2
+			.works-content-spec
+				font-size: $size-H5
+				padding-top: 4%
+			.works-content-discription
+				font-size: 14px
+				color: $color-4
+				font-weight: normal
+				a
+					color: $color-spec
+					text-decoration: none
+					font-weight: bold
+
+
+	.carousel-cell
+		margin-right: 20px
+		overflow: hidden
+		img
+			height: 86vh
+	.flickity-prev-next-button.next
+		margin-right: 20%
+		width: 30px
+		height: 30px
+		top: 90vh
+	.flickity-prev-next-button.previous
+		margin-left: 20%
+		width: 30px
+		height: 30px
+		top: 90vh
+
+	// fancybox //
+	.fancybox-inner
+		overflow: hidden
+	.fancybox-skin
+		padding: 0
+	.fancybox-title, .fancybox-title-inside-wrap
+		display: none
+
+
+
+
+
+
+
+
+
+

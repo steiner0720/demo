@@ -24,17 +24,17 @@ jQuery(document).ready(function(){
 
 
 	// attr flickity img //
-	$(function(){
-		var project_N = $('.carousel').length
-		var img_N = $('.carousel-cell img').length
-		for( i = 1; i <= project_N; i++){
-			for ( p = 1; p <= project_N; p++){
-				for( q = 1; q <= img_N; q++){
-					$('.carousel').eq(i-1).find('.carousel-cell img').eq(p).attr('src', 'imgs/works/' + img_N + '-' + p + '.jpg')
-				}
-			}
-		}
-	})
+	// $(function(){
+	// 	var project_N = $('.carousel').length
+	// 	var img_N = $('.carousel-cell img').length
+	// 	for( i = 1; i <= project_N; i++){
+	// 		for ( p = 1; p <= project_N; p++){
+	// 			for( q = 1; q <= img_N; q++){
+	// 				$('.carousel').eq(i-1).find('.carousel-cell img').eq(p).attr('src', 'imgs/works/' + img_N + '-' + p + '.jpg')
+	// 			}
+	// 		}
+	// 	}
+	// })
 
 
 

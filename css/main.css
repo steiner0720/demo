@@ -72,8 +72,11 @@ iframe {
     background-image: url(../imgs/bg_index_graphic.png); }
   .section:nth-child(6) {
     background-color: #1a1a1a;
-    background-image: url(../imgs/bg_index_webvisual.png); }
+    background-image: url(../imgs/bg_index_photography.png); }
   .section:nth-child(7) {
+    background-color: #1a1a1a;
+    background-image: url(../imgs/bg_index_webvisual.png); }
+  .section:nth-child(8) {
     background-color: #1a1a1a;
     background-image: url(../imgs/bg_index_motionfilm.png); }
 
@@ -1239,49 +1242,49 @@ iframe {
 
 .container .works {
   background-color: #1a1a1a; }
-  .container .works .graphic, .container .works .motionfilm, .container .works .webvisual {
+  .container .works .graphic, .container .works .photography, .container .works .motionfilm, .container .works .webvisual {
     height: 100vh; }
-    .container .works .graphic h3, .container .works .motionfilm h3, .container .works .webvisual h3 {
+    .container .works .graphic h3, .container .works .photography h3, .container .works .motionfilm h3, .container .works .webvisual h3 {
       text-align: center;
       padding-top: 8%;
       padding-bottom: 2%;
       font-size: 32px;
       font-weight: bold;
       color: #cacaca; }
-    .container .works .graphic .works-wrap, .container .works .motionfilm .works-wrap, .container .works .webvisual .works-wrap {
+    .container .works .graphic .works-wrap, .container .works .photography .works-wrap, .container .works .motionfilm .works-wrap, .container .works .webvisual .works-wrap {
       background-position: center;
       background-size: cover;
       background-image: url(../imgs/svg/bg_works_graphic.svg);
       background-color: #1a1a1a; }
-      .container .works .graphic .works-wrap .works-box, .container .works .motionfilm .works-wrap .works-box, .container .works .webvisual .works-wrap .works-box {
+      .container .works .graphic .works-wrap .works-box, .container .works .photography .works-wrap .works-box, .container .works .motionfilm .works-wrap .works-box, .container .works .webvisual .works-wrap .works-box {
         display: inline-block;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 2%;
         padding-bottom: 3%; }
-        .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover {
+        .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .photography .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover {
           -webkit-animation: work-hover-in 1s forwards;
           animation: work-hover-in 1s forwards; }
-        .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover-text {
+        .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .photography .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover-text {
           -webkit-animation: work-text-hover-in 2s forwards;
           animation: work-text-hover-in 2s forwards; }
-        .container .works .graphic .works-wrap .works-box .works-imgbox, .container .works .motionfilm .works-wrap .works-box .works-imgbox, .container .works .webvisual .works-wrap .works-box .works-imgbox {
+        .container .works .graphic .works-wrap .works-box .works-imgbox, .container .works .photography .works-wrap .works-box .works-imgbox, .container .works .motionfilm .works-wrap .works-box .works-imgbox, .container .works .webvisual .works-wrap .works-box .works-imgbox {
           width: 360px;
           height: 202px;
           margin-bottom: 20px;
           background-size: cover; }
-          .container .works .graphic .works-wrap .works-box .works-imgbox a, .container .works .motionfilm .works-wrap .works-box .works-imgbox a, .container .works .webvisual .works-wrap .works-box .works-imgbox a {
+          .container .works .graphic .works-wrap .works-box .works-imgbox a, .container .works .photography .works-wrap .works-box .works-imgbox a, .container .works .motionfilm .works-wrap .works-box .works-imgbox a, .container .works .webvisual .works-wrap .works-box .works-imgbox a {
             text-decoration: none;
             white-space: nowrap;
             color: #fff; }
-            .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover {
+            .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .photography .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover {
               width: 0px;
               margin: 0px;
               background-color: #856e40;
               overflow: hidden;
               -webkit-animation: work-hover-out 1s forwards;
               animation: work-hover-out 1s forwards; }
-              .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div {
+              .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .photography .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div {
                 font-size: 20px;
                 color: #856e40;
                 font-weight: bold;
@@ -1293,16 +1296,21 @@ iframe {
                 height: 100px;
                 -webkit-animation: work-text-hover-out 2s forwards;
                 animation: work-text-hover-out 2s forwards; }
-                .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div span {
+                .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .photography .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div span {
                   font-size: 16px;
                   color: #cacaca;
                   font-weight: normal; }
-            .container .works .graphic .works-wrap .works-box .works-imgbox a img, .container .works .motionfilm .works-wrap .works-box .works-imgbox a img, .container .works .webvisual .works-wrap .works-box .works-imgbox a img {
+            .container .works .graphic .works-wrap .works-box .works-imgbox a img, .container .works .photography .works-wrap .works-box .works-imgbox a img, .container .works .motionfilm .works-wrap .works-box .works-imgbox a img, .container .works .webvisual .works-wrap .works-box .works-imgbox a img {
               padding-bottom: 7%; }
-        .container .works .graphic .works-wrap .works-box span, .container .works .motionfilm .works-wrap .works-box span, .container .works .webvisual .works-wrap .works-box span {
+        .container .works .graphic .works-wrap .works-box span, .container .works .photography .works-wrap .works-box span, .container .works .motionfilm .works-wrap .works-box span, .container .works .webvisual .works-wrap .works-box span {
           font-size: 16px;
           font-weight: normal;
           color: #cacaca; }
+  .container .works .photography .works-wrap {
+    background-position: center;
+    background-size: cover;
+    background-color: #1a1a1a;
+    background-image: url(../imgs/svg/bg_works_photography.svg); }
   .container .works .webvisual .works-wrap {
     background-position: center;
     background-size: cover;
@@ -1383,48 +1391,48 @@ iframe {
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .container .works {
     background-color: #1a1a1a; }
-    .container .works .graphic, .container .works .motionfilm, .container .works .webvisual {
+    .container .works .graphic, .container .works .phtography, .container .works .motionfilm, .container .works .webvisual {
       height: 100vh; }
-      .container .works .graphic h3, .container .works .motionfilm h3, .container .works .webvisual h3 {
+      .container .works .graphic h3, .container .works .phtography h3, .container .works .motionfilm h3, .container .works .webvisual h3 {
         text-align: center;
         padding-top: 25%;
         padding-bottom: 2%;
         font-size: 32px;
         font-weight: bold;
         color: #cacaca; }
-      .container .works .graphic .works-wrap, .container .works .motionfilm .works-wrap, .container .works .webvisual .works-wrap {
+      .container .works .graphic .works-wrap, .container .works .phtography .works-wrap, .container .works .motionfilm .works-wrap, .container .works .webvisual .works-wrap {
         background-position: center;
         background-size: cover;
         background-image: url(../imgs/svg/bg_works_graphic.svg);
         background-color: #1a1a1a; }
-        .container .works .graphic .works-wrap .works-box, .container .works .motionfilm .works-wrap .works-box, .container .works .webvisual .works-wrap .works-box {
+        .container .works .graphic .works-wrap .works-box, .container .works .phtography .works-wrap .works-box, .container .works .motionfilm .works-wrap .works-box, .container .works .webvisual .works-wrap .works-box {
           display: inline-block;
           padding-left: 0px;
           padding-right: 0px;
           padding-top: 15%;
           padding-bottom: 3%; }
-          .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover {
+          .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .phtography .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover {
             -webkit-animation: work-hover-in 1s forwards;
             animation: work-hover-in 1s forwards; }
-          .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover-text {
+          .container .works .graphic .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .phtography .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .motionfilm .works-wrap .works-box .works-imgbox:hover .works-box-hover-text, .container .works .webvisual .works-wrap .works-box .works-imgbox:hover .works-box-hover-text {
             -webkit-animation: work-text-hover-in 2s forwards;
             animation: work-text-hover-in 2s forwards; }
-          .container .works .graphic .works-wrap .works-box .works-imgbox, .container .works .motionfilm .works-wrap .works-box .works-imgbox, .container .works .webvisual .works-wrap .works-box .works-imgbox {
+          .container .works .graphic .works-wrap .works-box .works-imgbox, .container .works .phtography .works-wrap .works-box .works-imgbox, .container .works .motionfilm .works-wrap .works-box .works-imgbox, .container .works .webvisual .works-wrap .works-box .works-imgbox {
             width: 288px;
             height: 162px;
             margin-bottom: 20px;
             background-size: cover; }
-            .container .works .graphic .works-wrap .works-box .works-imgbox a, .container .works .motionfilm .works-wrap .works-box .works-imgbox a, .container .works .webvisual .works-wrap .works-box .works-imgbox a {
+            .container .works .graphic .works-wrap .works-box .works-imgbox a, .container .works .phtography .works-wrap .works-box .works-imgbox a, .container .works .motionfilm .works-wrap .works-box .works-imgbox a, .container .works .webvisual .works-wrap .works-box .works-imgbox a {
               text-decoration: none;
               white-space: nowrap;
               color: #fff; }
-              .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover {
+              .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .phtography .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover {
                 width: 0px;
                 margin: 0px;
                 background-color: #856e40;
                 -webkit-animation: work-hover-out 1s forwards;
                 animation: work-hover-out 1s forwards; }
-                .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div {
+                .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .phtography .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div {
                   font-size: 20px;
                   color: #856e40;
                   font-weight: bold;
@@ -1436,24 +1444,14 @@ iframe {
                   height: 100px;
                   -webkit-animation: work-text-hover-out 2s forwards;
                   animation: work-text-hover-out 2s forwards; }
-                  .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div span {
+                  .container .works .graphic .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .phtography .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .motionfilm .works-wrap .works-box .works-imgbox a .works-box-hover div span, .container .works .webvisual .works-wrap .works-box .works-imgbox a .works-box-hover div span {
                     font-size: 16px;
                     color: #cacaca;
                     font-weight: normal; }
-          .container .works .graphic .works-wrap .works-box span, .container .works .motionfilm .works-wrap .works-box span, .container .works .webvisual .works-wrap .works-box span {
+          .container .works .graphic .works-wrap .works-box span, .container .works .phtography .works-wrap .works-box span, .container .works .motionfilm .works-wrap .works-box span, .container .works .webvisual .works-wrap .works-box span {
             font-size: 16px;
             font-weight: normal;
             color: #cacaca; }
-    .container .works .webvisual .works-wrap {
-      background-position: center;
-      background-size: cover;
-      background-color: #1a1a1a;
-      background-image: url(../imgs/svg/bg_works_webvisual.svg); }
-    .container .works .motionfilm .works-wrap {
-      background-position: center;
-      background-size: cover;
-      background-color: #1a1a1a;
-      background-image: url(../imgs/svg/bg_works_motionfilm.svg); }
   /* external css: flickity.css */
   .works .carousel {
     width: 100%;
@@ -1520,7 +1518,7 @@ iframe {
   height: 100vh;
   background-color: #000;
   position: fixed;
-  z-index: -2;
+  z-index: 10;
   overflow: hidden; }
   .loading-page-bg .loading-page {
     margin: 38vh auto;

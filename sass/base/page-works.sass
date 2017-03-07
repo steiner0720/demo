@@ -39,7 +39,7 @@
 .container
 	.works
 		background-color: $color-1
-		.graphic, .motionfilm, .webvisual
+		.graphic, .photography, .motionfilm, .webvisual
 			// overflow: hidden
 			height: 100vh
 			h3
@@ -104,6 +104,12 @@
 						font-weight: normal
 						color: $color-4
 
+
+		.photography
+			.works-wrap
+				+bg
+				background-color: $color-1
+				background-image: url(../imgs/svg/bg_works_photography.svg)
 		.webvisual
 			.works-wrap
 				+bg
@@ -199,7 +205,7 @@
 	.container
 		.works
 			background-color: $color-1
-			.graphic, .motionfilm, .webvisual
+			.graphic, .phtography, .motionfilm, .webvisual
 				// overflow: hidden
 				height: 100vh
 				h3
@@ -260,16 +266,6 @@
 							font-weight: normal
 							color: $color-4
 
-			.webvisual
-				.works-wrap
-					+bg
-					background-color: $color-1
-					background-image: url(../imgs/svg/bg_works_webvisual.svg)
-			.motionfilm
-				.works-wrap
-					+bg
-					background-color: $color-1
-					background-image: url(../imgs/svg/bg_works_motionfilm.svg)
 
 
 

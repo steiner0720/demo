@@ -1,40 +1,35 @@
 jQuery(document).ready(function(){
 
-	// $(window).on('load', function(){
-	// 	$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
-	// })
+	$(window).on('load', function(){
+		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
+	})
 
 
 	// for loop works-box bg img //
 	$(function(){
 		var $works_imgbox = $('.works-imgbox')
-		for (i = 0; i <  $works_imgbox.length + 1; i++){
-			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+		// graphic length //
+		for (i = 1; i <=  $works_imgbox.length; i++){
+			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
+		}
+		// photography length //
+		for (i = 10; i <=  18; i++){
+			$('.photography').find($works_imgbox).eq(i - 10).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
+		}
 
+		// web visual length //
+		for (i = 19; i <=  23; i++){
+			$('.webvisual').find($works_imgbox).eq(i - 19).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
 		}
-		for (i = 12; i <  17; i++){
-			$('.webvisual').find($works_imgbox).eq(i - 12).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
-		}
-		for (i = 17; i <  21; i++){
-			$('.motionfilm').find($works_imgbox).eq(i - 17).css('background', 'url("imgs/works_review/' + i  + '.png") no-repeat')
+		// motionfilm visual length //
+		for (i = 24; i <=  27; i++){
+			$('.motionfilm').find($works_imgbox).eq(i - 24).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
 		}
 		$('.works-imgbox').css('backgroundSize', 'cover')
 		$('.works-imgbox').css('backgroundPosition', 'center')
 	})
 
 
-	// attr flickity img //
-	// $(function(){
-	// 	var project_N = $('.carousel').length
-	// 	var img_N = $('.carousel-cell img').length
-	// 	for( i = 1; i <= project_N; i++){
-	// 		for ( p = 1; p <= project_N; p++){
-	// 			for( q = 1; q <= img_N; q++){
-	// 				$('.carousel').eq(i-1).find('.carousel-cell img').eq(p).attr('src', 'imgs/works/' + img_N + '-' + p + '.jpg')
-	// 			}
-	// 		}
-	// 	}
-	// })
 
 
 
@@ -45,7 +40,7 @@ jQuery(document).ready(function(){
 	$(function(){
 		$('#fullpage').fullpage({
 			css3: true,
-			anchors: ['welcome', 'brief', 'awards', 'feature', 'works_graphic', 'works_webvisual', 'works_motionfilm'],
+			anchors: ['welcome', 'brief', 'awards', 'feature', 'works_graphic', 'works_photography', 'works_webvisual', 'works_motionfilm'],
         	autoScrolling: true,
         	scrollingSpeed: 1000,
        		fitToSection: true,
@@ -359,7 +354,7 @@ jQuery(document).ready(function(){
 			$('.scroll-down').eq(3).css({top: 4 * window_height - scroll_down_h / 2})
 			$('.scroll-down').eq(4).css({top: 5 * window_height - scroll_down_h / 2})
 			$('.scroll-down').eq(5).css({top: 6 * window_height - scroll_down_h / 2})
-
+			$('.scroll-down').eq(6).css({top: 7 * window_height - scroll_down_h / 2})
 		}
 			center()
 		$(window).resize(function(){

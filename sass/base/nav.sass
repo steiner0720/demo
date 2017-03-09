@@ -33,6 +33,41 @@
 		left: 38px
 		padding: 0px 0px 10px 0px
 		background-color: $color-1
+// menu hover //
+@keyframes menu-in
+	0%
+		color: $color-4
+		top: 30px
+		left: 38px
+		padding: 0px 0px 10px 0px
+		background-color: $color-1
+	50%
+		color: $color-4
+	100%
+		color: $color-1
+		top: 0px
+		left: 0px
+		padding: 31px 38px 31px 38px
+		background-color: $color-4
+
+@keyframes menu-out
+	0%
+		color: $color-1
+		top: 0px
+		left: 0px
+		padding: 31px 38px 31px 38px
+		background-color: $color-4
+	50%
+		color: $color-1
+
+	100%
+		color: $color-4
+		top: 30px
+		left: 38px
+		padding: 0px 0px 10px 0px
+		background-color: $color-1
+
+
 
 
 // logo hover //
@@ -70,7 +105,41 @@
 		padding: 0px
 		color: $color-4
 		background-color: $color-1
-
+// logo hover //
+@keyframes logo-in
+	0%
+		left: 31px
+		top: 30px
+		weight: 0px
+		padding: 0px
+		color: $color-4
+		background-color: $color-1
+	50%
+		color: $color-4
+	100%
+		left: 0px
+		top: 0px
+		weight: 187.13px
+		padding: 31px
+		color: $color-1
+		background-color: $color-4
+@keyframes logo-out
+	0%
+		left: 0px
+		top: 0px
+		weight: 187.13px
+		padding: 31px
+		color: $color-1
+		background-color: $color-4
+	50%
+		color: $color-1
+	100%
+		left: 31px
+		top: 30px
+		weight: 0px
+		padding: 0px
+		color: $color-4
+		background-color: $color-1
 
 
 // menulist hover //
@@ -80,6 +149,17 @@
 	100%
 		color: $color-spec
 @-webkit-keyframes menulist-out
+	0%
+		color: $color-spec
+	100%
+		color: $color-4
+// menulist hover //
+@keyframes menulist-in
+	0%
+		color: $color-4
+	100%
+		color: $color-spec
+@keyframes menulist-out
 	0%
 		color: $color-spec
 	100%
@@ -100,7 +180,21 @@
 	100%
 		color: $color-1
 		background-color: $color-4
-
+// menu-close hover //
+@keyframes menu-close-in
+	0%
+		color: $color-1
+		background-color: $color-4
+	100%
+		color: $color-4
+		background-color: $color-spec
+@keyframes menu-close-out
+	0%
+		color: $color-4
+		background-color: $color-spec
+	100%
+		color: $color-1
+		background-color: $color-4
 
 
 

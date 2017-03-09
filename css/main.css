@@ -498,6 +498,26 @@ iframe {
     margin-right: 40%;
     background-color: #1a1a1a; } }
 
+@keyframes works-btn-in {
+  0% {
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #1a1a1a; }
+  100% {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #856e40; } }
+
+@keyframes works-btn-out {
+  0% {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #856e40; }
+  100% {
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #1a1a1a; } }
+
 @-webkit-keyframes works-mobile-btn-in {
   0% {
     margin-left: 10%;
@@ -518,6 +538,26 @@ iframe {
     margin-right: 10%;
     background-color: #1a1a1a; } }
 
+@keyframes works-mobile-btn-in {
+  0% {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1a1a1a; }
+  100% {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #856e40; } }
+
+@keyframes works-mobile-btn-out {
+  0% {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #856e40; }
+  100% {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1a1a1a; } }
+
 @-webkit-keyframes works-pad-btn-in {
   0% {
     margin-left: 20%;
@@ -529,6 +569,26 @@ iframe {
     background-color: #856e40; } }
 
 @-webkit-keyframes works-pad-btn-out {
+  0% {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #856e40; }
+  100% {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #1a1a1a; } }
+
+@keyframes works-pad-btn-in {
+  0% {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #1a1a1a; }
+  100% {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #856e40; } }
+
+@keyframes works-pad-btn-out {
   0% {
     margin-left: 30%;
     margin-right: 30%;
@@ -692,6 +752,38 @@ iframe {
     padding: 0px 0px 10px 0px;
     background-color: #1a1a1a; } }
 
+@keyframes menu-in {
+  0% {
+    color: #cacaca;
+    top: 30px;
+    left: 38px;
+    padding: 0px 0px 10px 0px;
+    background-color: #1a1a1a; }
+  50% {
+    color: #cacaca; }
+  100% {
+    color: #1a1a1a;
+    top: 0px;
+    left: 0px;
+    padding: 31px 38px 31px 38px;
+    background-color: #cacaca; } }
+
+@keyframes menu-out {
+  0% {
+    color: #1a1a1a;
+    top: 0px;
+    left: 0px;
+    padding: 31px 38px 31px 38px;
+    background-color: #cacaca; }
+  50% {
+    color: #1a1a1a; }
+  100% {
+    color: #cacaca;
+    top: 30px;
+    left: 38px;
+    padding: 0px 0px 10px 0px;
+    background-color: #1a1a1a; } }
+
 @-webkit-keyframes logo-in {
   0% {
     left: 31px;
@@ -728,6 +820,42 @@ iframe {
     color: #cacaca;
     background-color: #1a1a1a; } }
 
+@keyframes logo-in {
+  0% {
+    left: 31px;
+    top: 30px;
+    weight: 0px;
+    padding: 0px;
+    color: #cacaca;
+    background-color: #1a1a1a; }
+  50% {
+    color: #cacaca; }
+  100% {
+    left: 0px;
+    top: 0px;
+    weight: 187.13px;
+    padding: 31px;
+    color: #1a1a1a;
+    background-color: #cacaca; } }
+
+@keyframes logo-out {
+  0% {
+    left: 0px;
+    top: 0px;
+    weight: 187.13px;
+    padding: 31px;
+    color: #1a1a1a;
+    background-color: #cacaca; }
+  50% {
+    color: #1a1a1a; }
+  100% {
+    left: 31px;
+    top: 30px;
+    weight: 0px;
+    padding: 0px;
+    color: #cacaca;
+    background-color: #1a1a1a; } }
+
 @-webkit-keyframes menulist-in {
   0% {
     color: #cacaca; }
@@ -735,6 +863,18 @@ iframe {
     color: #856e40; } }
 
 @-webkit-keyframes menulist-out {
+  0% {
+    color: #856e40; }
+  100% {
+    color: #cacaca; } }
+
+@keyframes menulist-in {
+  0% {
+    color: #cacaca; }
+  100% {
+    color: #856e40; } }
+
+@keyframes menulist-out {
   0% {
     color: #856e40; }
   100% {
@@ -749,6 +889,22 @@ iframe {
     background-color: #856e40; } }
 
 @-webkit-keyframes menu-close-out {
+  0% {
+    color: #cacaca;
+    background-color: #856e40; }
+  100% {
+    color: #1a1a1a;
+    background-color: #cacaca; } }
+
+@keyframes menu-close-in {
+  0% {
+    color: #1a1a1a;
+    background-color: #cacaca; }
+  100% {
+    color: #cacaca;
+    background-color: #856e40; } }
+
+@keyframes menu-close-out {
   0% {
     color: #cacaca;
     background-color: #856e40; }
@@ -1635,6 +1791,28 @@ iframe {
     height: 100%;
     background-color: #856e40; } }
 
+@keyframes work-hover-in {
+  0% {
+    width: 0px;
+    height: 100%;
+    background-color: #856e40; }
+  20% { }
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a; } }
+
+@keyframes work-hover-out {
+  0% {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a; }
+  20% { }
+  100% {
+    width: 0px;
+    height: 100%;
+    background-color: #856e40; } }
+
 @-webkit-keyframes work-text-hover-in {
   0% {
     opacity: 0; }
@@ -1642,6 +1820,18 @@ iframe {
     opacity: 1; } }
 
 @-webkit-keyframes work-text-hover-out {
+  100 {
+    opacity: 1; }
+  0 {
+    opacity: 0; } }
+
+@keyframes work-text-hover-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes work-text-hover-out {
   100 {
     opacity: 1; }
   0 {

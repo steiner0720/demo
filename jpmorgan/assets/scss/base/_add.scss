@@ -1,0 +1,82 @@
+
+
+@import '../partials/variables'; // colors, fonts etc...
+
+
+.title_header{
+	display: none;
+}
+
+.midTxt>a{
+	color: $colorOrg;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+	.graphic-pic{
+		display: none;
+	}
+	.midTxt{
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		padding: 2%;
+		padding-left: 15%;
+		padding-right: 15%;
+		background: $colorOrg;
+		border-radius: 5px;
+		border: 1px solid $colorOrg;
+		cursor: pointer;
+		margin-bottom: 100px;
+	}
+	.midTxt:hover{
+		background-color: #fff;
+	}
+	.midTxt>a{
+		color: #fff;
+	}
+	.midTxt:hover a{
+		color: $colorOrg;
+	}
+	.moth-form-left {
+		margin: 0px;
+		padding: 0px;
+	}
+	.moth-form-left >h5 {
+		margin: 0px;
+		padding: 0px;
+	}
+	.moth-form{
+		width: 80%;
+		padding: 30px;
+	}
+	.textAreaExtra2{
+		padding-bottom: 0px;
+	}
+	.exTxt2{
+		color: #63666a;
+	}
+
+	.secA{
+		background: url(../img/mobile_bg.png);
+		background-position: center;
+		background-size: cover;
+	}
+
+	.title_header{
+		display: block;
+		text-align: center;
+		position: relative;
+		top: 100px;
+	}
+
+	.title_header img{
+		width: 320px;
+	}
+	.exTxt{
+		padding: 0px;
+	}
+	h6{
+		font-weight: bold;
+	}
+}
+

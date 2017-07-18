@@ -13,17 +13,17 @@ jQuery(document).ready(function(){
 			$('.graphic').find($works_imgbox).eq(i - 1).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
 		}
 		// photography length //
-		for (i = 10; i <=  18; i++){
-			$('.photography').find($works_imgbox).eq(i - 10).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
+		for (i = 11; i <=  19; i++){
+			$('.photography').find($works_imgbox).eq(i - 11).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
 		}
 
 		// web visual length //
-		for (i = 19; i <=  23; i++){
-			$('.webvisual').find($works_imgbox).eq(i - 19).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
+		for (i = 20; i <=  31; i++){
+			$('.webdesign').find($works_imgbox).eq(i - 20).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
 		}
 		// motionfilm visual length //
-		for (i = 24; i <=  27; i++){
-			$('.motionfilm').find($works_imgbox).eq(i - 24).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
+		for (i = 32; i <=  35; i++){
+			$('.motionfilm').find($works_imgbox).eq(i - 32).css('background', 'url("imgs/works_review/review (' + i  + ').png") no-repeat')
 		}
 		$('.works-imgbox').css('backgroundSize', 'cover')
 		$('.works-imgbox').css('backgroundPosition', 'center')
@@ -40,7 +40,7 @@ jQuery(document).ready(function(){
 	$(function(){
 		$('#fullpage').fullpage({
 			css3: true,
-			anchors: ['welcome', 'brief', 'awards', 'feature', 'works_graphic', 'works_photography', 'works_webvisual', 'works_motionfilm'],
+			anchors: ['welcome', 'brief', 'awards', 'feature', 'works_graphic', 'works_photography', 'works_webdesign', 'works_motionfilm'],
         	autoScrolling: true,
         	scrollingSpeed: 1000,
        		fitToSection: true,

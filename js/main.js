@@ -1,5 +1,5 @@
 $(function(){
-	
+
 	$(window).on('load', function(){
 		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
 	})
@@ -392,8 +392,6 @@ $(function(){
 				$(window).resize(function(){
 					location.reload()
 				})
-			}else if( $(window).width() < 1000 ){
-
 			}
 		})
 

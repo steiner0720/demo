@@ -2118,7 +2118,7 @@ iframe {
   height: 100vh;
   background-color: #1a1a1a;
   position: fixed;
-  z-index: 10;
+  z-index: -2;
   overflow: hidden; }
   .loading-page-bg .loading-page {
     margin: 38vh auto;

@@ -1,10 +1,8 @@
+$(window).on('load', function(){
+	$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
+})
+
 $(function(){
-
-	$(window).on('load', function(){
-		$('.loading-page-bg').stop(true,false).animate({height: '0vh'} ,1000, 'easeInQuad')
-	})
-
-
 	// for loop works-box bg img //
 	$(function(){
 		var $works_imgbox = $('.works-imgbox')

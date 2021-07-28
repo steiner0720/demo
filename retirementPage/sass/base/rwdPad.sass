@@ -1,0 +1,269 @@
+@media only screen and (max-width: 960px)
+	// ---------- defaultOption---------- //
+	// var-font-size //
+	$s1: 28px
+	$s2: 15px
+	$s3: 17px
+	$s4: 15px
+
+	// var-line-height //
+	$l1: 38px
+	$l2: 24px
+	$l3: 28px
+	$l4: 24px
+
+	// Default //
+	body
+		font-size: $s2
+		background-color: #fff
+	a
+		text-decoration: none
+		color: $grayDeep
+	img
+		height: auto
+		max-height: auto
+	h1
+		font-size: $s1
+		line-height: $l1
+		color: $grayLight
+		font-weight: normal
+	p
+		margin: 0px
+		color: $grayDeep
+
+
+	// ---------- mainObject---------- //
+
+	// container //
+	.container
+
+	// sectionFather //
+	.header, .actuarial, .paper
+
+	// sectionWrap //
+	.headerWrap, .actuarialWrap, .paperWrap
+		max-width: 767px
+
+	// contentWrap, imgWrap //
+	.contentWrap
+		width: 30%
+	.imgWrap
+		width: 30%
+		img
+			width: 400px
+		p
+			font-size: $s3
+			line-height: $l3
+	.imgTop
+
+	.contentLink
+
+	.contentAct
+		width: 150px
+		padding: 5px 15px
+
+
+	// ---------- sectionObject---------- //
+
+	// header //
+	.header
+		.headerWrap
+			top: -120px
+			.imgWrap
+				+lrcenter
+				img
+					width: 650px
+
+	// actuarial //
+	.actuarialWrap
+		.imgWrap
+			img
+				width: 300px
+				margin-top: 6%
+				margin-bottom: 6%
+		a
+			cursor: pointer
+	// paper //
+	.paper
+	.paperWrap
+		height: 300px
+		top: -100px
+		.imgWrap
+			+lrcenter
+			img
+				width: 600px
+		
+	// stepWrap //
+	.step
+	.stepWrap
+		margin-top: 60px
+		.contentWrap
+			width: 30%
+			margin: 0px
+			h1
+				font-size: 20px
+				line-height: 28px
+				color: $grayLight
+			p
+				font-size: $s3
+				color: $grayDeep
+		.imgWrap
+			width: 30%
+			margin: 0px
+			margin-left: 30px
+			text-align: left
+			img
+				width: 350px
+				+lrcenter
+	.numberTxt
+		font-size: 70px
+		top: -15px
+		left: -60px
+	.numberImg
+		top: -70px
+		left: -100px
+		img
+			width: 130px
+		span
+			line-height: $l1
+			font-size: $s3
+		p
+			font-size: $s2
+			line-height: $l4
+	.contentSource
+		font-size: $s4
+		line-height: $l4
+		color: $grayLight
+
+	.subDescript
+		span
+			line-height: $l1
+			font-size: $s3
+		p
+			font-size: $s4
+			line-height: $l4
+			color: $grayLight
+	.lightText
+		font-size: $s3
+
+
+	// ---------- subObject ---------- //
+
+	// lineFlow //
+	.lineFlow
+		top: 0px
+
+	// slickControl //
+	.slickControl
+		bottom: 0px
+	.slickAction
+		bottom: 0px
+	.controlLine
+		overflow: hidden
+		width: 100%
+		top: 3px
+	.controlBar
+		max-width: 767px
+	.controlLeft, .mainControl, .controlRight
+		margin-top: 15px
+	.controlLeft
+		margin-right: -3%
+		height: 30px
+		width: 50px
+		display: none
+		.triangle
+			right: 45px
+			top: 7px
+	.controlRight
+		margin-left: -3%
+		height: 30px
+		width: 50px
+		display: none
+		.triangle
+			left: 45px
+			top: 6px
+
+
+	// actuarialPage //
+	.actuarialBg
+		width: 0px
+		height: 100vh
+		background-color: #fff
+		position: fixed
+		top: 0px
+		opacity: .7
+		z-index: 19
+	.actuarialPage
+		width: 100%
+		margin-left: 0px
+		background-color: #fff
+		margin-bottom: 10%
+		position: absolute
+		max-height: 15000px
+		z-index: 20
+		top: 0px
+		overflow: hidden
+		transition: max-height 1.5s
+		.sectionShadow
+			z-index: 21
+
+
+	.actuarial, .calculateTopic, .fundWrap, .modelWrap
+		max-width: 1280px
+		+lrcenter
+		text-align: center
+
+	.actuarialB, .calculate
+		opacity: 0
+
+	.calculateTopic
+		text-align: left
+
+	.finish
+		margin-top: 2%
+		.calculateNow
+			margin-left: -50px
+			top: 0px
+			width: 120px
+			img
+				width: 90px
+
+	// fund section //
+	.fundspecWrap
+		max-width: 960px
+	.specTitle
+		width: 250px
+	.specImg
+		max-width: 600px
+	.fundWrap
+		.sectionTitle
+			p
+				font-size: 20px
+				margin-bottom: 3px
+			img
+				display: none
+	.calculateWrap
+		img
+			display: none
+
+	// finished control //
+	.finishWrap
+		overflow: hidden
+		max-height: 500px
+	.calculateTopic
+		height: auto
+	.heightAdd
+		height: 200px
+	.heightFull
+		max-height: 100vh
+	.hiddenAdd
+		max-height: 0px
+		padding: 0px
+	.hiddenFade
+		opacity: 1
+		transition: all .8s
+	.hiddenFadeOut
+		opacity: 0
+		z-index: -1
+		transition: all .8s
+

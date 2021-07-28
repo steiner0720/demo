@@ -1,0 +1,241 @@
+@media only screen and (max-width: 1279px)
+	// ---------- defaultOption---------- //
+	// var-font-size //
+	$s1: 28px
+	$s2: 15px
+	$s3: 17px
+	$s4: 15px
+
+	// var-line-height //
+	$l1: 38px
+	$l2: 24px
+	$l3: 28px
+	$l4: 24px
+
+	// Default //
+	body
+		font-size: $s2
+		background-color: #fff
+	a
+		text-decoration: none
+		color: $grayDeep
+	img
+		height: auto
+		max-height: auto
+	h1
+		font-size: $s1
+		line-height: $l1
+		color: $grayLight
+		font-weight: normal
+	p
+		margin: 0px
+		color: $grayDeep
+
+
+	// ---------- mainObject---------- //
+
+	// container //
+	.container
+
+	// sectionFather //
+	.header, .actuarial, .paper
+
+	// sectionWrap //
+	.headerWrap, .actuarialWrap, .paperWrap
+		max-width: 960px
+
+	// contentWrap, imgWrap //
+	.contentWrap
+		width: 35%
+
+	.imgWrap
+		width: 35%
+		img
+			width: 500px
+		p
+			font-size: $s3
+			line-height: $l3
+	.imgTop
+
+	.contentLink
+
+	.contentAct
+		width: 150px
+		padding: 5px 15px
+
+
+	// ---------- sectionObject---------- //
+
+	// header //
+	.header
+		.headerWrap
+			top: -120px
+			.imgWrap
+				+lrcenter
+				img
+					width: 650px
+	// actuarial //
+	.actuarialWrap
+		.imgWrap
+			img
+				width: 400px
+				margin-top: 6%
+				margin-bottom: 6%
+		a
+			cursor: pointer
+	// paper //
+	.paper
+	.paperWrap
+		height: 300px
+		top: -100px
+		.imgWrap
+			+lrcenter
+			img
+				width: 600px
+
+	// stepWrap //
+	.step
+	.stepWrap
+		margin-top: 60px
+		.contentWrap
+			h1
+				font-size: 24px
+				line-height: 28px
+				color: $grayLight
+			p
+				font-size: $s3
+				color: $grayDeep
+	.numberTxt
+		font-size: 70px
+		top: -15px
+		left: -60px
+	.numberImg
+		top: -70px
+		left: -100px
+		img
+			width: 130px
+		span
+			line-height: $l1
+			font-size: $s3
+		p
+			font-size: $s2
+			line-height: $l4
+	.contentSource
+		font-size: $s4
+		line-height: $l4
+		color: $grayLight
+
+	.lightText
+		font-size: $s3
+
+	// ---------- subObject ---------- //
+
+	// lineFlow //
+	.lineFlow
+		top: 0px
+
+
+	// slickControl //
+	.slickControl
+		bottom: 0px
+	.slickAction
+		bottom: 0px
+	.controlLine
+		overflow: hidden
+		width: 100%
+	.controlBar
+		max-width: 960px
+	.controlLeft, .mainControl, .controlRight
+		margin-top: 15px
+	.controlLeft
+		margin-right: 5%
+		height: 30px
+		width: 50px
+		.triangle
+			right: 45px
+			top: 7px
+	.controlRight
+		margin-left: 5%
+		height: 30px
+		width: 50px
+		.triangle
+			left: 45px
+			top: 6px
+
+
+	// actuarialPage //
+	.actuarialBg
+		width: 0px
+		height: 100vh
+		background-color: #fff
+		position: fixed
+		top: 0px
+		opacity: .7
+		z-index: 19
+	.actuarialPage
+		width: 100%
+		margin-left: 0px
+		background-color: #fff
+		margin-bottom: 10%
+		position: absolute
+		max-height: 15000px
+		z-index: 20
+		top: 0px
+		overflow: hidden
+		transition: max-height 1.5s
+		.sectionShadow
+			z-index: 21
+
+
+
+	.mainBox
+		h5
+			font-size: $s2
+			a
+				color: $orange
+
+
+	.actuarial, .calculateTopic, .fundWrap, .modelWrap
+		max-width: 1280px
+		+lrcenter
+		text-align: center
+
+	.actuarialB, .calculate
+		opacity: 0
+
+	.calculateTopic
+		text-align: left
+
+	// fund section //
+	.fundspecWrap
+		max-width: 960px
+		p
+			width: 80%
+			+lrcenter
+	.specTitle
+		width: 250px
+	.specImg
+		max-width: 960px
+
+
+	// finished control //
+	.finishWrap
+		overflow: hidden
+		max-height: 500px
+	.calculateTopic
+		height: auto
+	.heightAdd
+		height: 200px
+	.heightFull
+		max-height: 100vh
+	.hiddenAdd
+		max-height: 0px
+		padding: 0px
+	.hiddenFade
+		opacity: 1
+		transition: all .8s
+	.hiddenFadeOut
+		opacity: 0
+		z-index: -1
+		transition: all .8s
+

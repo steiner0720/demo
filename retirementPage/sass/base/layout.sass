@@ -1,0 +1,923 @@
+// ---------- defaultOption---------- //
+
+// var-color //
+$grayLight: #767d89
+$grayDeep: #454f5f
+$orange: #ed8b00
+$green: #b9b631
+$purple: #9d74b4
+$blue: #4891c1
+
+// var-font-size //
+$s1: 40px
+$s2: 20px
+$s3: 17px
+$s4: 15px
+
+// var-line-height //
+$l1: 48px
+$l2: 32px
+$l3: 28px
+$l4: 24px
+
+// mixin //
+@mixin lrcenter
+	margin-left: auto
+	margin-right: auto
+@mixin boxstyle
+	border-radius: 3px
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #ffffff 78%, #f2f2f2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f2f2f2 0%,#ffffff 78%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f2f2f2 0%,#ffffff 78%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+	box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.2)
+
+// Default //
+*
+	position: relative
+body
+	font-family: 'Arial', "Microsoft JhengHei",JhengHei,"微软正黑体","Microsoft YaHei New","Microsoft Yahei","微软雅黑",STXihei,SimHei,"华文细黑",sans-serif;
+	font-size: $s2
+	background-color: #fff
+a
+	text-decoration: none
+	color: $grayDeep
+img
+	height: auto
+	max-height: auto
+h1
+	font-size: $s1
+	line-height: $l1
+	color: $grayLight
+	font-weight: normal
+p
+	margin: 0px
+	color: $grayDeep
+.hlword
+	color: $orange
+
+// ---------- mainObject---------- //
+
+// container //
+.container
+	overflow: hidden
+	text-align: center
+	max-height: 30000px
+	transition: max-height .5s
+	z-index: 1
+
+// sectionFather //
+.header, .actuarial, .paper
+	width: 100%
+	overflow: hidden
+	height: auto
+
+// sectionWrap //
+.headerWrap, .actuarialWrap, .paperWrap
+	max-width: 1280px
+	+lrcenter
+	text-align: left
+
+// contentWrap, imgWrap //
+.contentWrap
+	width: 35%
+	margin-left: 7%
+	margin-right: 7%
+	line-height: $l3
+	display: inline-block
+	vertical-align: middle
+.imgWrap
+	width: 35%
+	margin-top: 3%
+	margin-bottom: 3%
+	margin-left: 7%
+	margin-right: 7%
+	display: inline-block
+	vertical-align: middle
+	img
+		width: 500px
+	p
+		font-size: $s3
+		line-height: $l3
+.imgTop
+	margin-top: 60px
+	margin-bottom: 30px
+.contentLink
+	margin-top: 10px
+	margin-bottom: 10px
+	width: 50%
+	text-align: center
+	color: #fff
+	display: inline-block
+	vertical-align: middle
+	img
+		width: 200px
+.contentAct
+	background-color: $orange
+	font-size: $s4
+	padding: 4px
+
+
+// ---------- sectionObject---------- //
+
+// topbar //
+.topbar
+	height: 100px
+	width: 100%
+	background-color: #fff
+	text-align: left
+.topbarWrap
+	max-width: 1280px
+	height: 100px
+	+lrcenter
+	img
+		width: 80px
+		top: 15px
+		margin-left: 30px
+
+// header //
+.header
+	background-color: #ebebeb
+	height: 450px
+	.headerWrap
+		top: -90px
+		.imgWrap
+			+lrcenter
+			img
+				width: 550px
+
+// actuarial //
+.actuarialWrap
+	.imgWrap
+		img
+			width: 400px
+			margin-top: 3%
+			margin-bottom: 3%
+	a
+		cursor: pointer
+// paper //
+.paper
+	background-image: url(../images/kv2_bg.jpg)
+	background-size: cover
+	background-position: center
+.paperWrap
+	height: 400px
+	top: -50px
+	.imgWrap
+		+lrcenter
+		img
+			width: 600px
+.actionBar
+	text-align: center
+	margin-top: 3%
+	background-color: $grayLight
+	cursor: pointer
+	padding-top: 20px
+	max-height: 500px
+	height: auto
+	overflow: hidden
+	.sectionShadow
+		top: 0px
+	h1
+		color: #fff
+		margin: 0px
+	img
+		width: 18px
+		margin-bottom: 15px
+
+
+
+
+// stepWrap //
+.step
+	overflow: hidden
+	max-height: 5000px
+	height: auto
+	transition: all .5s
+	padding-bottom: 20%
+.stepWrap
+	margin-top: 60px
+	.contentWrap
+		vertical-align: top
+		text-align: left
+		width: 30%
+		margin: 0px
+		margin-right: 30px
+		h1
+			z-index: 1
+			width: 90%
+			font-size: 28px
+			line-height: 38px
+			margin-left: 10%
+			color: $grayLight
+		p
+			width: 100%
+			font-size: $s3
+	.contentSource
+		font-size: 14px
+	.imgWrap
+		width: 30%
+		margin: 0px
+		margin-left: 30px
+		text-align: left
+		img
+			width: 400px
+			+lrcenter
+.numberTxt
+	font-size: 90px
+	top: -15px
+	left: -70px
+	color: $grayLight
+.numberImg
+	z-index: 0
+	width: 100%
+	position: absolute
+	top: -80px
+	left: -120px
+	img
+		width: 150px
+.numberLine
+	width: 100%
+	margin-left: 0
+	height: 1px
+	background-color: $orange
+	top: -33px
+	margin-bottom: 1%
+
+.lightText
+	margin-bottom: 5px
+	color: $grayDeep
+
+.subDescript
+	margin-top: 30px
+	margin-bottom: 30px
+	border: 1px solid #e6e6e6
+	border-radius: 3px
+	padding: 20px 30px
+	padding-top: 10px
+	color: $grayDeep
+	span
+		line-height: $l1
+		font-size: $s2
+	p
+		font-size: $s3
+		line-height: $l4
+.contentSource
+	font-size: $s4
+	line-height: $l4
+	color: $grayLight
+
+.specDescript
+	margin-left: 30px
+	font-size: $s4
+	line-height: $l4
+	color: $grayLight
+	padding-left: 30px
+	border-left: 1px solid #e6e6e6
+	margin-top: 30px
+	margin-bottom: 30px
+
+
+
+
+// footer //
+.footer
+	max-width: 960px
+	margin-left: auto
+	margin-right: auto
+	background-color: #eeeeee
+	font-size: 15px
+	line-height: 32px
+	border-radius: 2px
+	color: #555
+	max-height: 5000px
+	height: auto
+	transition: all .5s
+	overflow: hidden
+	a
+		color: #5E8AB4
+.footer-wrap
+	text-align: justify
+	max-width: 1280px
+	margin: 60px
+
+
+// ---------- subObject ---------- //
+
+// lineFlow //
+.lineFlow
+	position: fixed
+	width: 60px
+	z-index: 12
+	right: 0px
+	bottom: 100px
+	max-height: 200px
+	transition: all .5s
+
+// sectionShadow //
+.sectionShadow
+	position: absolute
+	z-index: 11
+	width: 100%
+	opacity: 1
+	img
+		width: 1320px
+
+// triangle //
+.triangleWrap
+	position: absolute
+	z-index: 11
+	width: 100%
+.triangle
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 25px 20px 0 20px
+	border-color: #ffffff transparent transparent transparent
+	+lrcenter
+
+// slick //
+.slick
+	display: block
+.slick-slide
+	&:focus, a
+		outline: none
+
+// slickControl //
+.slickControl
+	width: 100%
+	position: fixed
+	bottom: 0px
+	height: 80px
+	z-index: 15
+	transition: all .3s
+.slickAction
+	bottom: 0px
+.controlLine
+	overflow: hidden
+	width: 100%
+.controlBar
+	max-width: 1280px
+	height: 60px
+	border-radius: 30px
+	background-color: $grayLight
+	+lrcenter
+	text-align: center
+	white-space: nowrap
+.controlLeft, .mainControl, .controlRight
+	display: inline-block
+	vertical-align: middle
+	margin-top: 15px
+.controlLeft
+	margin-right: 10%
+	cursor: pointer
+	background-color: $grayLight
+	height: 30px
+	width: 50px
+	.triangle
+		position: absolute
+		transform: rotate(90deg)
+		border-width: 12px 7px 0 7px
+		display: inline-block
+		vertical-align: middle
+		right: 45px
+		top: 9px
+		transition: all .3s
+	a
+		display: inline-block
+		vertical-align: middle
+		color: #fff
+		font-size: $s4
+.controlRight
+	margin-left: 10%
+	cursor: pointer
+	background-color: $grayLight
+	height: 30px
+	width: 50px
+	.triangle
+		position: absolute
+		transform: rotate(-90deg)
+		border-width: 12px 7px 0 7px
+		display: inline-block
+		vertical-align: middle
+		left: 45px
+		top: 8px
+		transition: all .3s
+	a
+		display: inline-block
+		vertical-align: middle
+		color: #fff
+		font-size: $s4
+
+.controlRight:hover .triangle
+	border-width: 15px 10px 0 10px
+.controlLeft:hover .triangle
+	border-width: 15px 10px 0 10px
+.controlRight:active .triangle
+	border-width: 14px 9px 0 9px
+	transition: all .1s
+.controlLeft:active .triangle
+	border-width: 14px 9px 0 9px
+	transition: all .1s
+
+// dot/line //
+.dot, .line
+	display: inline-block
+	vertical-align: middle
+.dot
+	width: 8px
+	height: 8px
+	border-radius: 4px
+	background-color: #fff
+	opacity: .8
+	cursor: pointer
+	transition: all .3s
+
+.dot:hover
+	width: 15px
+	height: 15px
+	border-radius: 15px
+.line
+	width: 20px
+	height: 1px
+	margin-left: 20px
+	margin-right: 20px
+	background-color: #b3b3b3
+.mainIcon
+	position: absolute
+	z-index: 10
+	width: 72px
+	height: 72px
+	border-radius: 40px
+	margin-top: -25px
+	margin-left: -36px
+	border: 3px solid $grayLight
+	white-space: nowrap
+	background-color: #fff
+	overflow: hidden
+.iconMask
+	left: 0
+.dotImg
+	width: 150px
+	height: 90px
+	border-radius: 35px
+	opacity: 1
+	background-color: transparent
+	img
+		width: 60px
+		margin-top: 6px
+		margin-left: 6px
+		cursor: pointer
+
+
+
+// actuarialPage //
+.actuarialBg
+	width: 0px
+	height: 100vh
+	background-color: #fff
+	position: fixed
+	top: 0px
+	opacity: .7
+	z-index: 19
+.actuarialPage
+	width: 90%
+	margin-left: 5%
+	background-color: #fff
+	position: absolute
+	max-height: 15000px
+	z-index: 20
+	top: 0px
+	overflow: hidden
+	transition: max-height 1.5s
+	.sectionShadow
+		z-index: 21
+
+
+.actuarial, .calculateTopic, .fundWrap, .modelWrap
+	max-width: 1280px
+	+lrcenter
+	text-align: center
+
+.actuarialB, .calculate
+	opacity: 0
+
+.closeBtn
+	position: fixed
+	right: -200px
+	top: 5%
+	cursor: pointer
+	z-index: 25
+	transition: all .3s
+	img
+		transition: all .5s
+		width: 35px
+		height: 35px
+
+		border-radius: 25px
+.closeBtn:hover
+	right: -205px
+	img
+		transform: rotate(90deg)
+		width: 45px
+		height: 45px
+
+
+.calculate
+	+lrcenter
+	text-align: center
+	background-color: #ecf0f1
+	padding-bottom: 5%
+
+// sectionTitle //
+.sectionTitle
+	padding-top: 30px
+	white-space: nowrap
+	+lrcenter
+	overflow: hidden
+	img
+		width: 300px
+		display: inline-block
+		vertical-align: middle
+		margin-left: 1%
+		margin-right: 1%
+	h1
+		display: inline-block
+		vertical-align: middle
+	p
+		line-height: $l3
+		font-size: $s3
+		margin-bottom: 30px
+
+// calculateTopic //
+.calculateTopic
+	width: 600px
+	+lrcenter
+	text-align: left
+	overflow: hidden
+.calculateStep
+	width: 100%
+	color: $grayLight
+	margin-top: 30px
+	transition: all .3s
+.calculateNow, .circleLine, .calculateBox
+	display: inline-block
+	vertical-align: middle
+
+.calculateNow
+	width: 50px
+	margin-left: 60px
+	span
+		display: inline-block
+		vertical-align: bottom
+		font-size: $s1
+		&:nth-child(2)
+			display: inline-block
+			vertical-align: bottom
+			font-size: $s2
+	&:nth-child(1)
+		top: -50px
+.circleLine
+	text-align: center
+	width: 30px
+	img:nth-child(1)
+		width: 3px
+	img:nth-child(2)
+		margin-top: 10px
+		width: 30px
+		margin-bottom: 10px
+	img:nth-child(3)
+		width: 3px
+
+.calculateBox
+	top: -22px
+.boxLeft, .mainBox
+	display: inline-block
+	vertical-align: middle
+
+.boxLeft
+	left: 7px
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 10px 17.3px 10px 0
+	border-color: transparent #fff transparent transparent
+	border-radius: 5
+
+.mainBox
+	min-width: 350px
+	background-color: #FFF
+	padding: 20px
+	border-radius: 7px
+	border-bottom: 3px solid #e5ebec
+	border-right: 3px solid #e5ebec
+	p
+		font-size: $s4
+		display: inline-block
+		vertical-align: middle
+	select
+		display: inline-block
+		vertical-align: middle
+		font-size: $s3
+		color: $grayDeep
+		border: 1px solid #e5ebec
+		margin-right: 15px
+	h5
+		a
+			color: $orange
+
+.nowyearsWrap, .nextBtn
+	display: inline-block
+	vertical-align: middle
+.nowyearsWrap
+	margin-left: 15px
+	margin-right: 15px
+	p, #nowYears
+		display: inline-block
+		vertical-align: middle
+#nowYears
+	color: $orange
+	margin-left: 5px
+	margin-right: 5px
+
+.nextBtn
+	font-size: $s4
+	background-color: $grayLight
+	border-radius: 25px
+	padding: 7px 12px
+	color: #fff
+	transition: all .3s
+	cursor: pointer
+	border: 4px solid #fff
+
+.nextBtn:hover
+	background-color: #8cc94e
+.nextBtn:active
+	border: 4px solid $grayDeep
+
+// finished Box //
+.finish
+	margin-top: 2%
+	.calculateNow
+		margin-left: -70px
+		top: 0px
+		width: 120px
+		img
+			width: 90px
+	.circleLine
+		img
+			width: 65px
+	.boxLeft
+		margin-left: 30px
+	.mainBox
+		text-align: left
+		p
+			display: inline-block
+			vertical-align: middle
+		h5
+			margin: 0px
+			margin-top: 15px
+			margin-bottom: 15px
+			font-weight: normal
+			color: $grayDeep
+#finishMoney, #finishYears
+	display: inline-block
+	vertical-align: middle
+	color: $orange
+
+#finishMoney
+	font-size: $s1
+	margin-left: 10px
+	margin-right: 10px
+
+
+// share to //
+.shareWrap
+	margin-top: 60px
+	p, .shareFB, .partLine, .shareLine
+		display: inline-block
+		vertical-align: middle
+	img
+		width: 40px
+		height: 40px
+	p
+		margin-right: 30px
+		font-size: $s3
+.shareFB, .shareLine
+	transition: all .3s
+	cursor: pointer
+.partLine
+	margin-left: 15px
+	margin-right: 15px
+	height: 30px
+	width: 2px
+	background-color: #d5dfe1
+
+// fund section //
+.fund
+	overflow: hidden
+	max-height: 10000px
+	transition: max-height .8s
+	opacity: 0
+	.sectionShadow
+		text-align: center
+.fundWrap
+	.sectionTitle
+		margin-bottom: 60px
+		p
+			color: $blue
+			font-size: 24px
+			margin-bottom: 7px
+			font-weight: normal
+
+.fundspecWrap
+	+lrcenter
+	max-width: 1280px
+	background-color: #ecf0f1
+	border-bottom: 3px solid #d5dfe1
+	border-right: 3px solid #d5dfe1
+	padding-top: 30px
+	padding-bottom: 30px
+	margin-bottom: 0px
+	margin-top: 0px
+	p
+		font-size: $s4
+		line-height: $l3
+	.contentSource
+		max-width: 767px
+		+lrcenter
+		font-size: 14px
+		text-align: left
+.specTitle
+	padding: 10px 15px
+	margin-bottom: 15px
+	border-radius: 25px
+	background-color: #fff
+	width: 250px
+	+lrcenter
+	img
+		width: 24px
+		margin-right: 5px
+		display: inline-block
+		vertical-align: middle
+	p
+		color: $blue
+		font-weight: bold
+		font-size: $s2
+		display: inline-block
+		vertical-align: middle
+.specImg
+	+lrcenter
+	margin-top: 30px
+	margin-bottom: 15px
+	overflow: auto
+	max-width: 960px
+
+// model //
+.model
+	overflow: hidden
+	max-height: 10000px
+	transition: max-height .8s
+	opacity: 0
+.modelWrap
+	margin-top: 60px
+	a
+		color: #fff
+	.contentSource
+		width: 60%
+		+lrcenter
+
+.shopBtn, .lineAction, .bookAction
+	+lrcenter
+	width: 350px
+	padding: 10px
+	border-radius: 5px
+	text-align: center
+	img
+		left: 0px
+		margin-right: 5px
+		height: 40px
+		display: inline-block
+		vertical-align: middle
+
+.bookAction
+	background-color: #4891c1
+	img
+		margin-right: 60px
+.shopBtn
+	background-color: $orange
+	img
+		margin-right: 60px
+.actionBtnImg
+	display: inline-block
+	vertical-align: middle
+	img
+		width: 22px
+.lineAction
+	background-color: #00b900
+.modelBottomA, .modelBottomB, .modelBottomC
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 17px 10px 0 10px
+	border-color: $orange transparent transparent transparent
+	border-radius: 3px
+	+lrcenter
+	margin-bottom: 15px
+	top: -2px
+.modelBottomB
+	border-color: #4891c1 transparent transparent transparent
+
+.modelBottomC
+	border-color: #00b900 transparent transparent transparent
+
+.pigIcon
+	+lrcenter
+	img
+		width: 70px
+
+.modelContent
+	text-align: left
+	width: 100%
+	padding-top: 30px
+	padding-bottom: 30px
+	margin-top: 30px
+	margin-bottom: 0px
+	background-color: #e4e5e7
+	+lrcenter
+	border: 0px dashed #eee
+	p
+		margin: 15px
+		margin-left: 60px
+		text-align: left
+		display: inline-block
+		vertical-align: middle
+		font-size: $s3
+		line-height: $l3
+		color: $grayLight
+	h1
+		margin: 0px
+		margin-left: 60px
+		margin-top: 15px
+		color: $grayDeep
+.modelWrap
+	.contentSource
+		text-align: left
+		width: 100%
+		padding-top: 0px
+		padding-bottom: 30px
+		color: $grayLight
+		background-color: #e4e5e7
+		p 
+			margin-left: 60px
+			margin-right: 60px
+			color: $grayLight
+			line-height: $l3
+			font-size: $s4
+input
+	width: 80px
+	font-size: $s4
+	padding: 2px 4px
+	border-radius: 3px
+	border: 1px solid #e5ebec
+	color: $grayDeep
+	margin-bottom: 30px
+#monthMoney
+	margin-bottom: 30px
+
+// finished control //
+.finishWrap
+	overflow: hidden
+	max-height: 500px
+.calculateTopic
+	height: auto
+.heightAdd
+	height: 200px
+.heightFull
+	max-height: 100vh
+.hiddenAdd
+	max-height: 0px
+	padding: 0px
+.hiddenFade
+	opacity: 1
+	transition: all .8s
+.hiddenFadeOut
+	opacity: 0
+	z-index: -1
+	transition: all .8s
+
+// slick text select //
+.slick-slider
+	-webkit-user-select: text
+	-khtml-user-select: text
+	-moz-user-select: text
+	-ms-user-select: text
+	user-select: text
+
+.slick-list.draggable
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
